@@ -1,19 +1,19 @@
 // import logo from './logo.svg';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css';
-import IntroductionPage from './component/IntroductionPage'
-import ExperiencePage from './component/ExperiencePage'
-import EducationPage from './component/EducationPage';
-import GoalPage from './component/GoalPage';
+import Introduction from './view/introduction/Introduction'
+import Experience from './view/experience/Experience'
+import Education from './view/education/Education';
+import Goal from './view/goal/Goal';
 
 const RouterPage = () => {
   return (
     <Routes>
-      <Route exact path="/" element={<IntroductionPage/>} />
-      <Route exact path="experience" element={<ExperiencePage/>} />
-      <Route exact path="education" element={<EducationPage/>} />
-      <Route exact path="goal" element={<GoalPage/>} />
-      <Route path="*" element={<IntroductionPage/>} />
+      <Route exact path="/" element={<Introduction/>} />
+      <Route exact path="experience" element={<Experience/>} />
+      <Route exact path="education" element={<Education/>} />
+      <Route exact path="goal" element={<Goal/>} />
+      <Route path="*" element={<Introduction/>} />
     </Routes>
   )
 }

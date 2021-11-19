@@ -1,4 +1,4 @@
-export default function EducationPage() {
+export default function Education() {
   return (
     <div>Education Page</div>
   )
