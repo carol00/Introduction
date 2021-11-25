@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css';
 import Introduction from './view/introduction/Introduction'
@@ -6,6 +5,7 @@ import Experience from './view/experience/Experience'
 import Education from './view/education/Education';
 import Goal from './view/goal/Goal';
 import TestView from './view/testView/TestView'
+import Header from './component/header/Header';
 
 const RouterPage = () => {
   return (
@@ -23,6 +23,7 @@ const RouterPage = () => {
 function App() {
   return (
     <div className="App">
+      <Header />
       <Router>
         <RouterPage />
       </Router>
