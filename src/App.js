@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import './App.css';
+import './App.css'
 import Introduction from './view/introduction/Introduction'
 import Experience from './view/experience/Experience'
-import Education from './view/education/Education';
-import Goal from './view/goal/Goal';
+import Education from './view/education/Education'
+import Goal from './view/goal/Goal'
 import TestView from './view/testView/TestView'
-import Header from './component/header/Header';
+import Header from './component/header/Header'
+import Footer from './component/footer/Footer'
 
 const RouterPage = () => {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Router>
         <RouterPage />
       </Router>
+      <Footer />
     </div>
   );
 }
