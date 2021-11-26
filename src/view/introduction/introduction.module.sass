@@ -1,11 +1,10 @@
 $pic-size: 110px
+@import '../../style/variable'
 
 .root
   margin: 3rem 0
-  .about
-    display: flex
-    align-items: center
-    justify-content: center
+  > div
+    @include set-flex(center, center)
   .pic
     width: $pic-size
     height: $pic-size
@@ -15,3 +14,23 @@ $pic-size: 110px
       box-shadow: 2px 2px 8px #6a6161
   .name
     margin-left: 15px
+    p
+      color: #b0b0b0
+  .description
+    margin: 3rem 0
+    > div
+      width: 100px
+      height: 130px
+      @include set-flex(center, center)
+      background: #5b85770d
+      border-radius: 10px
+      margin-right: 10px
+      // animation: rotate 2s
+      &:last-child
+        margin-right: 0
+
+@keyframes rotate
+  from
+    tramsform: rotateY(0deg)
+  to
+    transform: rotateY(180deg)
