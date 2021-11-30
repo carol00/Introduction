@@ -1,0 +1,24 @@
+@import '../../style/variable'
+
+.root
+  .wrap
+    width: 100px
+    height: 130px
+    perspective: 80px
+    margin-right: 20px
+  .content
+    width: 100%
+    height: 100%
+    position: relative
+    transition: 0.2s all ease
+  .card
+    width:100%
+    height: 100%
+    position: absolute
+    border-radius: 10px
+    background: #528b781f
+    color: #547369
+    font-size: 14px
+    @include set-flex(center, center)
+  .flip
+    transform: rotateY(180deg) scaleX(-1)
