@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import styles from './introduction.module.sass'
 import Image from '../../assets/avatar.jpg'
+import RotateTitle from '../../component/rotateTitle/RotateTitle'
 
 function About() {
   return (
@@ -16,16 +16,14 @@ function About() {
   )
 }
 
-function Description() {
-  const [birth, setBirth] = useState('出生地')
-  const [interest, setInterest] = useState('興趣')
-  const [sports, setSports] = useState('運動')
+const titleData = [{title: '出生地', content: '高雄'}, {title: '興趣', content: 'F1'}, {title: '運動', content: '羽球、撞球'}]
 
+function Description() {
   return (
     <div className={styles.description}>
-      <div onClick={() => setBirth('高雄')}><span>{birth}</span></div>
-      <div onClick={() => setInterest('看F1')}><span>{interest}</span></div>
-      <div onClick={() => setSports('打撞球、羽球')}><span>{sports}</span></div>
+      {titleData.map((value, index) => (
+        <RotateTitle key={index} title={value.title} content={value.content} />
+      ))}
     </div>
   )
 }
