@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types';
 
 export default function RotateTitle(props) {
   const [ title, setTitle ] = useState(props.title)
@@ -12,4 +13,9 @@ export default function RotateTitle(props) {
   return (
     <div onClick={() => changeState()} ><span>{title}</span></div>
   )
+}
+
+RotateTitle.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired
 }
