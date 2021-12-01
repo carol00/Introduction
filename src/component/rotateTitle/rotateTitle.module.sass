@@ -1,4 +1,4 @@
-@import '../../style/variable'
+@use '../../style/variable' as variable
 
 .root
   .wrap
@@ -19,7 +19,7 @@
     border-radius: 10px
     background: #528b781f
     font-size: 18px
-    @include set-flex(center, center)
+    +variable.set-flex(center, center)
     backface-visibility: hidden
   .front
     background: #b8e5d62e

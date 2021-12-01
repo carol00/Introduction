@@ -18,7 +18,7 @@ function About() {
   )
 }
 
-const titleData = [{title: '出生地', content: '高雄'}, {title: '興趣', content: 'F1'}, {title: '運動', content: '羽球、撞球'}]
+const titleData = [{title: '出生地', content: '高雄'}, {title: '興趣', content: 'F1、手做'}, {title: '運動', content: '羽球、撞球'}]
 
 function Description() {
   return (
