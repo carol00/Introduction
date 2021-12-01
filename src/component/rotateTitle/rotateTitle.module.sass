@@ -4,15 +4,16 @@
   .wrap
     width: 100px
     height: 130px
-    perspective: 80px
     margin-right: 20px
+    perspective: 1000px
   .content
     width: 100%
     height: 100%
     position: relative
-    transition: 0.2s all ease
+    transition: transform 0.8s
+    transform-style: preserve-3d
   .card
-    width:100%
+    width: 100%
     height: 100%
     position: absolute
     border-radius: 10px
@@ -20,5 +21,12 @@
     color: #547369
     font-size: 14px
     @include set-flex(center, center)
+    backface-visibility: hidden
+  .front
+    background: #5b857738
+  .back
+    background: #c1cac7
+    color: #FFF
+    transform: rotateY(180deg)
   .flip
-    transform: rotateY(180deg) scaleX(-1)
+    transform: rotateY(180deg)

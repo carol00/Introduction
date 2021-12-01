@@ -18,8 +18,8 @@ export default function RotateTitle(props) {
     <div className={styles.root}>
       <div className={styles.wrap}>
         <div className={rotateStyle} onClick={() => changeState()}>
-          <div className={styles.card}><span>{title}</span></div>
-          <div className={styles.card}><span>{title}</span></div>
+          <div className={`${styles.card} ${styles.front}`}><span>{title}</span></div>
+          <div className={`${styles.card} ${styles.back}`}><span>{title}</span></div>
         </div>
       </div>
     </div>
