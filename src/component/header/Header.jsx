@@ -2,7 +2,8 @@ import styles from './header.module.sass'
 
 const title = [
   {name: 'Introduction', href: '/'},
-  {name: 'Education', href: '/education'},
+  {name: 'Family', href: '/family'},
+  {name: 'Hand Made', href: '/handMade'},
   {name: 'Experience', href: '/experience'},
   {name: 'Goal', href: '/goal'},
 ]
