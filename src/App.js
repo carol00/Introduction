@@ -26,11 +26,11 @@ const RouterPage = () => {
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
+        <Header />
         <RouterPage />
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

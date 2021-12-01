@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import styles from './header.module.sass'
 
 const title = [
-  {name: 'Introduction', href: '/'},
-  {name: 'Family', href: '/family'},
-  {name: 'Hand Made', href: '/handMade'},
-  {name: 'Experience', href: '/experience'},
-  {name: 'Goal', href: '/goal'},
+  {name: 'Introduction', to: '/'},
+  {name: 'Family', to: '/family'},
+  {name: 'Hand Made', to: '/handMade'},
+  {name: 'Experience', to: '/experience'},
+  {name: 'Goal', to: '/goal'},
 ]
 
 export default function Header() {
@@ -13,7 +14,9 @@ export default function Header() {
     <div className={styles.root}>
       <ul>
         {title.map((value, index) => (
-          <li key={index}><a href={value.href}>{value.name}</a></li>
+          <li key={index}>
+            <Link to={value.to}>{value.name}</Link>
+          </li>
         ))}
       </ul>
     </div>
