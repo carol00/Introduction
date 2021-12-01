@@ -1,6 +1,8 @@
 import styles from './introduction.module.sass'
 import Image from '../../assets/avatar.jpg'
 import RotateTitle from '../../component/rotateTitle/RotateTitle'
+import LightbulbIcon from '@mui/icons-material/Lightbulb'
+import ElectricalServicesIcon from '@mui/icons-material/ElectricalServices'
 
 function About() {
   return (
@@ -28,11 +30,23 @@ function Description() {
   )
 }
 
+const Lightbulb = () => {
+  return (
+    <div className={styles.lightWrap}>
+     <LightbulbIcon className={styles.lightBulbIcon} />
+     <ElectricalServicesIcon className={styles.electricalIcon} />
+    </div>
+  )
+}
+
 export default function Introduction() {
   return (
     <div className={styles.root}>
       <About />
-      <Description />
+      <div className={styles.content}>
+        <Lightbulb />
+        <Description />
+      </div>
     </div>
   )
 }
