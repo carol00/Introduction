@@ -1,26 +1,30 @@
-$pic-size: 110px
+$pic-size: 150px
 @use '../../style/variable' as variable
 
 .root
-  margin: 3rem 0
+  margin: 8rem 0
   > div
     +variable.set-flex(center, center)
   .content
     position: relative
-    margin-top: 7rem
+    margin-top: 2.5rem
   .pic
     width: $pic-size
     height: $pic-size
+    border: 1px variable.$header-bg solid
+    border-radius: 50%
+    padding: 1px
     img
       width: 100%
       border-radius: 50%
       box-shadow: 2px 2px 8px #6a6161
   .name
-    margin-left: 15px
-    h3
+    margin-left: 20px
+    h2
       color: #d4dedb
     p
-      color: #b0b0b0a6
+      color: #959998
+      font-size: 18px
   .description
     +variable.set-flex(center, center)
     margin: 3rem 0
@@ -30,7 +34,8 @@ $pic-size: 110px
     height: 100%
     position: absolute
     +variable.set-flex(center, center)
-    margin-right: 45.5rem
+    margin-right: 51.1rem
+    margin-top: 5rem
     .lightBulbIcon
       margin-top: -15.5rem
       margin-left: 2.88rem

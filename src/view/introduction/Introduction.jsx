@@ -11,7 +11,7 @@ function About() {
         <img src={Image} alt="C" />
       </div>
       <div className={styles.name}>
-        <h3>許佩蓉</h3>
+        <h2>許佩蓉</h2>
         <p>Carol</p>
       </div>
     </div>

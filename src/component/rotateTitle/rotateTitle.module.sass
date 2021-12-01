@@ -2,8 +2,8 @@
 
 .root
   .wrap
-    width: 140px
-    height: 170px
+    width: 170px
+    height: 200px
     margin-right: 20px
     perspective: 1000px
   .content
@@ -18,14 +18,15 @@
     position: absolute
     border-radius: 10px
     background: #528b781f
-    font-size: 18px
+    font-size: 20px
+    font-weight: 600
     +variable.set-flex(center, center)
     backface-visibility: hidden
   .front
     background: #b8e5d62e
     color: #b8c9c4
   .back
-    background: #c1cac7
+    background: #dddddd
     color: #333232
     transform: rotateY(180deg)
   .flip
