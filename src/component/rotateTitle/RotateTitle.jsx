@@ -4,21 +4,19 @@ import styles from './rotateTitle.module.sass'
 import clsx from 'clsx'
 
 export default function RotateTitle(props) {
-  const [ title, setTitle ] = useState(props.title)
   const [ flipped, setFlipped ] = useState(false)
 
-  const changeState = () => {
+  const changeFlipState = () => {
     if (flipped) return
-    setTitle(props.content)
     setFlipped(!flipped)
   }
 
   return (
     <div className={styles.root}>
       <div className={styles.wrap}>
-        <div className={clsx(styles.content, flipped && styles.flip)} onClick={() => changeState()}>
-          <div className={`${styles.card} ${styles.front}`}><span>{title}</span></div>
-          <div className={`${styles.card} ${styles.back}`}><span>{title}</span></div>
+        <div className={clsx(styles.content, flipped && styles.flip)} onClick={() => changeFlipState()}>
+          <div className={`${styles.card} ${styles.front}`}><span>{props.title}</span></div>
+          <div className={`${styles.card} ${styles.back}`}><span>{props.content}</span></div>
         </div>
       </div>
     </div>
