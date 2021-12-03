@@ -4,8 +4,8 @@ import ElectricalServicesIcon from '@mui/icons-material/ElectricalServices'
 import clsx from 'clsx'
 import PropTypes from 'prop-types'
 
-export default function LightBulb(switcher) {
-  const open = switcher.switcher
+export default function LightBulb(props) {
+  const open = props.switcher
   return (
     <div className={styles.root}>
       <LightbulbIcon className={clsx(styles.lightBulbIcon, open && styles.openLightBulb)} />
