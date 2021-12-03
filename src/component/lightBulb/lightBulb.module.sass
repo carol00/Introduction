@@ -1,4 +1,6 @@
 @use '../../style/variable' as variable
+$closeLight-color: #4f4d4d9c
+$openLight-color: #f1f390
 
 .root
   width: 100%
@@ -11,13 +13,21 @@
     margin-top: -15.5rem
     margin-left: 2.88rem
     font-size: 250px
-    color: #4f4d4d9c
+    color: $closeLight-color
   .electricalIcon
     position: absolute
     margin-left: 10.9rem
-    color: #4f4d4d9c
+    color: $closeLight-color
     font-size: 100px
   .openLightBulb
-    color: #FFF
+    animation: openLightAni 1.5s
+    animation-fill-mode: forwards
   .openElectrical
-    color: #767575de
+    color: #6b6a6ade
+
+@keyframes openLightAni
+  50%
+    color:#d9db7c
+  100%
+    color: $openLight-color
+    filter: drop-shadow(0px -2px 7px #ccc)
