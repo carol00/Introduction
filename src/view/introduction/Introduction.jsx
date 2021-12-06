@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import styles from './introduction.module.sass'
 import Image from '../../assets/avatar.jpg'
 import RotateTitle from '../../component/rotateTitle/RotateTitle'
 import LightBulb from '../../component/lightBulb/LightBulb'
+import { fetchTitleData } from './introductionSlice'
 
 function About() {
   return (
@@ -19,9 +20,9 @@ function About() {
   )
 }
 
-const titleData = [{title: '出生地', content: '高雄'}, {title: '興趣', content: 'F1、手做'}, {title: '運動', content: '羽球、撞球'}]
-
 function Description() {
+  const titleData = useSelector(state => (state.introduction.titleData))
+
   return (
     <div className={styles.description}>
       {titleData.map((value, index) => (
@@ -35,6 +36,9 @@ export default function Introduction() {
   const rotateTitleTotal = useSelector(state => state.rotateTitle.total)
   const [ fullState, setFullState ] = useState(false)
   const fullAmount = 3
+
+  const dispatch = useDispatch()
+  dispatch(fetchTitleData())
 
   useEffect(() => {
     if (rotateTitleTotal === fullAmount) {
