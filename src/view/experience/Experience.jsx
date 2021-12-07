@@ -8,7 +8,6 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import Typography from '@mui/material/Typography';
-import AvatarImg from '../../component/avatarImg';
 
 const company = [
   { name: '宣揚', startTime: '20**', deadline: '2017/10', content: 'Pos', icon: <LaptopMacIcon /> },
@@ -19,7 +18,6 @@ const company = [
 export default function Experience(props) {
   return (
     <div>
-      <AvatarImg />
       <h2>{props.title}</h2>
       <Timeline position="alternate">
         {company.map((value,index) => (
