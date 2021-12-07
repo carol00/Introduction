@@ -1,0 +1,16 @@
+@use '../../style/variable' as variable
+
+.root
+  .avatarArea
+    width: 100%
+    position: relative
+    +variable.set-flex(center, center)
+    .avatarContent
+      position: absolute
+      +variable.set-flex(center, center)
+      margin-top: 165px
+    .iconContent
+      +variable.set-flex(center, center)
+      width: 100%
+      .scaleUnbalanced
+        width: 400px
