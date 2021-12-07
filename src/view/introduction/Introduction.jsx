@@ -5,13 +5,12 @@ import Image from '../../assets/avatar.jpg'
 import RotateTitle from '../../component/rotateTitle/RotateTitle'
 import LightBulb from '../../component/lightBulb/LightBulb'
 import { fetchTitleData } from './introductionSlice'
+import Avatar from '../../component/avatar/Avatar'
 
 function About() {
   return (
     <div className={styles.about}>
-      <div className={styles.pic}>
-        <img src={Image} alt="C" />
-      </div>
+      <Avatar img={Image} width={150} height={150} />
       <div className={styles.name}>
         <h2>許佩蓉</h2>
         <p>Carol</p>
