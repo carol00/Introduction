@@ -31,8 +31,10 @@ const LifePhoto = () => {
     <div className={styles.festivalContainer}>
       {photoData.map((value, index) => (
         <div key={index} className={styles.picContent}>
-          <p className={styles.title}>{value.title}</p>
-          <div><img src={value.src} alt="" /></div>
+          <div>
+            <img src={value.src} alt="" />
+            <p className={styles.title}>{value.title}</p>
+          </div>
         </div>
       ))}
     </div>
