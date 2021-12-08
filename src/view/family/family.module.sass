@@ -1,7 +1,7 @@
 @use '../../style/variable' as variable
 
 .root
-  .avatarArea
+  .avatarContainer
     width: 100%
     position: relative
     +variable.set-flex(center, center)
@@ -14,3 +14,21 @@
       width: 100%
       .scaleUnbalanced
         width: 400px
+        color: #99a29f
+  .festivalContainer
+    width: 80%
+    margin: auto
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    justify-items: center
+    .picContent
+      width: 150px
+      height: 160px
+      margin: 0 5px 20px 5px
+      .title
+        background: #ededed
+        color: #696868
+      img
+        width: 100%
+        height: 100%
+  
