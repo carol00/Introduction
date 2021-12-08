@@ -3,6 +3,8 @@ import Image from '../../assets/avatar.jpg'
 import styles from './family.module.sass'
 import Icon from '@mdi/react'
 import { mdiHomeAnalytics } from '@mdi/js'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchPhotoData } from './familySlice'
 
 const AvatarArea = () => {
   const imgSize = 75
@@ -22,28 +24,12 @@ const AvatarArea = () => {
   )
 }
 
-const picContent = [
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'},
-  {title: '12/4', src: '../../assets/family/f1.jpg'}
-]
-
 const LifePhoto = () => {
+  const photoData = useSelector(state => state.family.photo)
+
   return (
     <div className={styles.festivalContainer}>
-      {picContent.map((value, index) => (
+      {photoData.map((value, index) => (
         <div key={index} className={styles.picContent}>
           <p className={styles.title}>{value.title}</p>
           <div><img src={value.src} alt="" /></div>
@@ -54,6 +40,9 @@ const LifePhoto = () => {
 }
 
 export default function Family() {
+  const dispatch = useDispatch()
+  dispatch(fetchPhotoData())
+
   return (
     <div className={styles.root}>
       <div className={styles.container}>
