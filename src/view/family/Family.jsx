@@ -1,5 +1,4 @@
 import Avatar from '../../component/avatar/Avatar'
-import Image from '../../assets/avatar.jpg'
 import styles from './family.module.sass'
 import Icon from '@mdi/react'
 import { mdiHomeAnalytics } from '@mdi/js'
@@ -7,13 +6,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchPhotoData } from './familySlice'
 
 const AvatarArea = () => {
+  const avatarData = useSelector(state => state.family.avatar)
   const imgSize = 75
   return (
     <div className={styles.avatarContainer}>
       <div className={styles.avatarContent}>
-          <Avatar img={Image} width={imgSize} height={imgSize} />
-          <Avatar img={Image} width={imgSize} height={imgSize} />
-          <Avatar img={Image} width={imgSize} height={imgSize} />
+        {avatarData.map((value, index) => (
+          <Avatar key={index} img={value.src} width={imgSize} height={imgSize} />
+        ))}
       </div>
       <div className={styles.iconContent}>
         <div className={styles.scaleUnbalanced}>

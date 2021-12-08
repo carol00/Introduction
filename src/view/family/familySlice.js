@@ -12,13 +12,15 @@ export const fetchPhotoData = createAsyncThunk(
 export const familySlice = createSlice({
   name: 'family',
   initialState: {
-    photo: []
+    photo: [],
+    avatar: []
   },
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(
       fetchPhotoData.fulfilled, (state, action) => {
         state.photo = action.payload.family.lifePhotoData
+        state.avatar = action.payload.family.avatar
       }
     )
   }
