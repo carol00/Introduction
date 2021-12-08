@@ -33,7 +33,9 @@ const LifePhoto = () => {
         <div key={index} className={styles.picContent}>
           <div>
             <img src={value.src} alt="" />
-            <p className={styles.title}>{value.title}</p>
+            {value.title &&
+              <p className={styles.title}>{value.title}</p>
+            }
           </div>
         </div>
       ))}
