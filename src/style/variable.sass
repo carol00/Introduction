@@ -6,3 +6,7 @@ $footer-bg: #a2b0bc3d
   display: flex
   align-items: $vertical
   justify-content: $horizontal
+
+=media-breakpoints($width)
+  @media screen and (min-width: $width)
+    @content
