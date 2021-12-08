@@ -4,29 +4,31 @@
     {"title": "興趣", "content": "F1、手做"},
     {"title": "運動", "content": "羽球、撞球"}
   ],
-  "familyPhotoData": [
-    {"title": "12/4", "src": "../../assets/family/d1.jpg"},
-    {"title": "", "src": "../../assets/family/d2.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d3.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d4.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d5.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d6.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d7.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d8.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d9.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d10.jpg"},
-    {"title": "", "src": "../../assets/family/d11.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d13.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d14.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d15.jpg"},
-    {"title": "", "src": "../../assets/family/d16.jpg"},
-    {"title": "", "src": "../../assets/family/d17.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d18.jpg"},
-    {"title": "12/4", "src": "../../assets/family/d19.jpg"},
-    {"title": "12/4", "src": "../../assets/family/h1.jpg"},
-    {"title": "12/4", "src": "../../assets/family/h2.jpg"},
-    {"title": "12/4", "src": "../../assets/family/h3.jpg"},
-    {"title": "12/4", "src": "../../assets/family/w1.jpg"},
-    {"title": "12/4", "src": "../../assets/family/w2.jpg"}
-  ]
+  "family": {
+    "lifePhotoData": [
+      {"title": "12/4", "src": "../../assets/family/life/d1.jpg"},
+      {"title": "", "src": "../../assets/family/life/d2.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d3.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d4.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d5.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d6.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d7.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d8.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d9.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d10.jpg"},
+      {"title": "", "src": "../../assets/family/life/d11.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d13.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d14.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d15.jpg"},
+      {"title": "", "src": "../../assets/family/life/d16.jpg"},
+      {"title": "", "src": "../../assets/family/life/d17.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d18.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d19.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/h1.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/h2.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/h3.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/w1.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/w2.jpg"}
+    ]
+  }
 }

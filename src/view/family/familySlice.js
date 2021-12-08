@@ -18,7 +18,7 @@ export const familySlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(
       fetchPhotoData.fulfilled, (state, action) => {
-        state.photo = action.payload.familyPhotoData
+        state.photo = action.payload.family.lifePhotoData
       }
     )
   }
