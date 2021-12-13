@@ -1,16 +1,21 @@
 import React, { useState, useCallback, useEffect } from 'react'
 import { useTransition, animated, useSpringRef } from '@react-spring/web'
+import { useDispatch } from 'react-redux'
+import { fetchHandMadeData } from './handMadeSlice'
 import styles from './handMade.module.sass'
 
 const pages = [
-  ({ style }) => React.createElement(animated.div, { style: Object.assign(Object.assign({}, style), { background: 'lightpink' }) }, "A"),
-  ({ style }) => React.createElement(animated.div, { style: Object.assign(Object.assign({}, style), { background: 'lightblue' }) }, "B"),
-  ({ style }) => React.createElement(animated.div, { style: Object.assign(Object.assign({}, style), { background: 'lightgreen' }) }, "C"),
+  ({ style }) => React.createElement(animated.div, { style: Object.assign(Object.assign({}, style)) }, "A"),
+  ({ style }) => React.createElement(animated.div, { style: Object.assign(Object.assign({}, style)) }, "B"),
+  ({ style }) => React.createElement(animated.div, { style: Object.assign(Object.assign({}, style)) }, "C"),
 ];
 
 export default function HandMade() {
+  const dispatch = useDispatch()
+  dispatch(fetchHandMadeData())
+
   const [index, set] = useState(0);
-  const onClick = useCallback(() => set(state => (state + 1) % 3), []);
+  const onClick = useCallback(() => set(state => (state + 1) % 5), []);
   const transRef = useSpringRef();
   const transitions = useTransition(index, {
     ref: transRef,
