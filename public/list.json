@@ -31,8 +31,56 @@
       {"title": "12/4", "src": "../../assets/family/life/w2.jpg"}
     ],
     "avatar": [
-      {"src": "../../assets/family/avatar/1.jpg" },
-      {"src": "../../assets/family/avatar/2.jpg" }
+      {"src": "../../assets/family/avatar/3.jpg" },
+      {"src": "../../assets/family/avatar/4.jpg" }
+    ]
+  },
+  "handMade": {
+    "herbarium": [
+      {"src": "../../assets/handMade/herbarium/1.jpg" },
+      {"src": "../../assets/handMade/herbarium/2.jpg" },
+      {"src": "../../assets/handMade/herbarium/3.jpg" },
+      {"src": "../../assets/handMade/herbarium/4.jpg" },
+      {"src": "../../assets/handMade/herbarium/5.jpg" }
+    ],
+    "crystal": [
+      {"src": "../../assets/handMade/crystal/FN1.jpg" },
+      {"src": "../../assets/handMade/crystal/FN2.jpg" },
+      {"src": "../../assets/handMade/crystal/FN3.jpg" },
+      {"src": "../../assets/handMade/crystal/FN4.jpg" },
+      {"src": "../../assets/handMade/crystal/FN5.jpg" },
+      {"src": "../../assets/handMade/crystal/FN6.jpg" },
+      {"src": "../../assets/handMade/crystal/FN7.jpg" },
+      {"src": "../../assets/handMade/crystal/FN8.jpg" },
+      {"src": "../../assets/handMade/crystal/FN9.jpg" },
+      {"src": "../../assets/handMade/crystal/FN10.jpg" },
+      {"src": "../../assets/handMade/crystal/FN11.jpg" },
+      {"src": "../../assets/handMade/crystal/FN12.jpg" },
+      {"src": "../../assets/handMade/crystal/FN13.jpg" },
+      {"src": "../../assets/handMade/crystal/FN14.jpg" },
+      {"src": "../../assets/handMade/crystal/FN15.jpg" },
+      {"src": "../../assets/handMade/crystal/FN16.jpg" }
+    ],
+    "birthday": [
+      {"src": "../../assets/handMade/birthday/1.jpg" },
+      {"src": "../../assets/handMade/birthday/2.jpg" },
+      {"src": "../../assets/handMade/birthday/3.jpg" },
+      {"src": "../../assets/handMade/birthday/4.jpg" },
+      {"src": "../../assets/handMade/birthday/5.jpg" }
+    ],
+    "dog": [
+      {"src": "../../assets/handMade/dog/1.jpg" },
+      {"src": "../../assets/handMade/dog/2.jpg" },
+      {"src": "../../assets/handMade/dog/3.jpg" },
+      {"src": "../../assets/handMade/dog/4.jpg" },
+      {"src": "../../assets/handMade/dog/5.jpg" },
+      {"src": "../../assets/handMade/dog/6.jpg" },
+      {"src": "../../assets/handMade/dog/7.jpg" },
+      {"src": "../../assets/handMade/dog/8.jpg" },
+      {"src": "../../assets/handMade/dog/9.jpg" },
+      {"src": "../../assets/handMade/dog/10.jpg" },
+      {"src": "../../assets/handMade/dog/11.jpg" },
+      {"src": "../../assets/handMade/dog/12.jpg" }
     ]
   }
 }
