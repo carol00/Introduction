@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react'
 import { useTransition, animated, useSpringRef } from '@react-spring/web'
 import { useDispatch } from 'react-redux'
-import { fetchHandMadeData } from './handMadeSlice'
+import { fetchHandMadeData } from '../.././redux/handMadeSlice'
 import styles from './handMade.module.sass'
 
 const pages = [
@@ -15,7 +15,7 @@ export default function HandMade() {
   dispatch(fetchHandMadeData())
 
   const [index, set] = useState(0);
-  const onClick = useCallback(() => set(state => (state + 1) % 5), []);
+  const onClick = useCallback(() => set(state => (state + 1) % 3), []);
   const transRef = useSpringRef();
   const transitions = useTransition(index, {
     ref: transRef,

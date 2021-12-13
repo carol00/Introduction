@@ -3,7 +3,7 @@ import styles from './family.module.sass'
 import Icon from '@mdi/react'
 import { mdiHomeAnalytics } from '@mdi/js'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchPhotoData } from './familySlice'
+import { fetchPhotoData } from '../../redux/familySlice'
 
 const AvatarArea = () => {
   const avatarData = useSelector(state => state.family.avatar)

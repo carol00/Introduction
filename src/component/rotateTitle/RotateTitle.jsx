@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { rotateTotal } from './rotateTitleSlice'
+import { rotateTotal } from '../../redux/rotateTitleSlice'
 import PropTypes from 'prop-types'
 import styles from './rotateTitle.module.sass'
 import clsx from 'clsx'

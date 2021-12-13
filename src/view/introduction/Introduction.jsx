@@ -4,7 +4,7 @@ import styles from './introduction.module.sass'
 import Image from '../../assets/avatar.jpg'
 import RotateTitle from '../../component/rotateTitle/RotateTitle'
 import LightBulb from '../../component/lightBulb/LightBulb'
-import { fetchTitleData } from './introductionSlice'
+import { fetchTitleData } from '../../redux/introductionSlice'
 import Avatar from '../../component/avatar/Avatar'
 
 function About() {

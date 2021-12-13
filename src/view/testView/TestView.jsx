@@ -5,7 +5,7 @@ import {
   decrement,
   incrementByAmount,
   incrementAsync
-} from './testSlice'
+} from '../../redux/testSlice'
 
 export default function TestView() {
   const count = useSelector((state) => state.counter.value)

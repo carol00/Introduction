@@ -1,14 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from './view/testView/testSlice'
-import rotateTitleReducer from './component/rotateTitle/rotateTitleSlice'
-import introductionReducer from './view/introduction/introductionSlice'
-import familyReducer from './view/family/familySlice'
+import counterReducer from './redux/testSlice'
+import rotateTitleReducer from './redux/rotateTitleSlice'
+import introductionReducer from './redux/introductionSlice'
+import familyReducer from './redux/familySlice'
+import handMadeReducer from './redux/handMadeSlice'
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
     rotateTitle: rotateTitleReducer,
     introduction: introductionReducer,
-    family: familyReducer
+    family: familyReducer,
+    handMade: handMadeReducer
   },
 })
