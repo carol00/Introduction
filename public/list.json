@@ -37,11 +37,11 @@
   },
   "handMade": {
     "herbarium": [
-      {"src": "../../assets/handMade/herbarium/1.jpg" },
-      {"src": "../../assets/handMade/herbarium/2.jpg" },
-      {"src": "../../assets/handMade/herbarium/3.jpg" },
-      {"src": "../../assets/handMade/herbarium/4.jpg" },
-      {"src": "../../assets/handMade/herbarium/5.jpg" }
+      {"src": "../../assets/handMade/herbarium/1.jpg", "title": "乾燥花" },
+      {"src": "../../assets/handMade/herbarium/2.jpg", "title": "組合、固定" },
+      {"src": "../../assets/handMade/herbarium/3.jpg", "title": "浮游花" },
+      {"src": "../../assets/handMade/herbarium/4.jpg", "title": "浮游花" },
+      {"src": "../../assets/handMade/herbarium/5.jpg", "title": "浮游花" }
     ],
     "crystal": [
       {"src": "../../assets/handMade/crystal/FN1.jpg", "title": "銅線" },
@@ -51,7 +51,6 @@
       {"src": "../../assets/handMade/crystal/FN5.jpg", "title": "耳環" },
       {"src": "../../assets/handMade/crystal/FN6.jpg", "title": "耳環" },
       {"src": "../../assets/handMade/crystal/FN7.jpg", "title": "書籤" },
-      {"src": "../../assets/handMade/crystal/FN8.jpg", "title": "書籤" },
       {"src": "../../assets/handMade/crystal/FN9.jpg", "title": "玫瑰擺飾" },
       {"src": "../../assets/handMade/crystal/FN10.jpg", "title": "髮夾" },
       {"src": "../../assets/handMade/crystal/FN11.jpg", "title": "髮夾" },
@@ -62,25 +61,25 @@
       {"src": "../../assets/handMade/crystal/FN16.jpg", "title": "頭飾" }
     ],
     "birthday": [
-      {"src": "../../assets/handMade/birthday/1.jpg" },
-      {"src": "../../assets/handMade/birthday/2.jpg" },
-      {"src": "../../assets/handMade/birthday/3.jpg" },
-      {"src": "../../assets/handMade/birthday/4.jpg" },
-      {"src": "../../assets/handMade/birthday/5.jpg" }
+      {"src": "../../assets/handMade/birthday/1.jpg", "title": "乾燥花" },
+      {"src": "../../assets/handMade/birthday/2.jpg", "title": "乾燥花" },
+      {"src": "../../assets/handMade/birthday/3.jpg", "title": "藍芽音樂盒" },
+      {"src": "../../assets/handMade/birthday/4.jpg", "title": "蛋糕轉檯" },
+      {"src": "../../assets/handMade/birthday/5.jpg", "title": "蛋糕" }
     ],
     "dog": [
-      {"src": "../../assets/handMade/dog/1.jpg" },
-      {"src": "../../assets/handMade/dog/2.jpg" },
-      {"src": "../../assets/handMade/dog/3.jpg" },
-      {"src": "../../assets/handMade/dog/4.jpg" },
-      {"src": "../../assets/handMade/dog/5.jpg" },
-      {"src": "../../assets/handMade/dog/6.jpg" },
-      {"src": "../../assets/handMade/dog/7.jpg" },
-      {"src": "../../assets/handMade/dog/8.jpg" },
-      {"src": "../../assets/handMade/dog/9.jpg" },
-      {"src": "../../assets/handMade/dog/10.jpg" },
-      {"src": "../../assets/handMade/dog/11.jpg" },
-      {"src": "../../assets/handMade/dog/12.jpg" }
+      {"src": "../../assets/handMade/dog/1.jpg", "title": "裁縫機" },
+      {"src": "../../assets/handMade/dog/2.jpg", "title": "領巾" },
+      {"src": "../../assets/handMade/dog/3.jpg", "title": "領巾" },
+      {"src": "../../assets/handMade/dog/4.jpg", "title": "領巾" },
+      {"src": "../../assets/handMade/dog/5.jpg", "title": "領巾" },
+      {"src": "../../assets/handMade/dog/6.jpg", "title": "項圈組合" },
+      {"src": "../../assets/handMade/dog/7.jpg", "title": "領巾" },
+      {"src": "../../assets/handMade/dog/8.jpg", "title": "領帶" },
+      {"src": "../../assets/handMade/dog/9.jpg", "title": "髮帶" },
+      {"src": "../../assets/handMade/dog/10.jpg", "title": "髮帶" },
+      {"src": "../../assets/handMade/dog/11.jpg", "title": "便當袋" },
+      {"src": "../../assets/handMade/dog/12.jpg", "title": "便當袋" }
     ]
   }
 }
