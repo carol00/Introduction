@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation  } from "react-router-dom";
 import styles from './header.module.sass'
+import clsx from "clsx";
 
 const title = [
   {name: 'Introduction', to: '/'},
@@ -10,12 +11,14 @@ const title = [
 ]
 
 export default function Header() {
+  const location = useLocation();
+
   return (
     <div className={styles.root}>
       <ul>
         {title.map((value, index) => (
           <li key={index}>
-            <Link to={value.to}>{value.name}</Link>
+            <Link to={value.to}  className={clsx(location.pathname === `${value.to}` && styles.active)}>{value.name}</Link>
           </li>
         ))}
       </ul>
