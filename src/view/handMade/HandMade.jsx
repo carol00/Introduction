@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react'
 import { useTransition, animated, useSpringRef } from '@react-spring/web'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { fetchHandMadeData } from '../.././redux/handMadeSlice'
 import styles from './handMade.module.sass'
 
@@ -12,7 +12,8 @@ const pages = [
 
 export default function HandMade() {
   const dispatch = useDispatch()
-  dispatch(fetchHandMadeData())
+  const data = useSelector(state => state.handMade.crystal)
+  console.log(data)
 
   const [index, set] = useState(0);
   const onClick = useCallback(() => set(state => (state + 1) % 3), []);
@@ -24,9 +25,12 @@ export default function HandMade() {
     enter: { opacity: 1, transform: 'translate3d(0,0%,0)' },
     leave: { opacity: 0, transform: 'translate3d(0,-50%,0)' },
   });
+
   useEffect(() => {
+    dispatch(fetchHandMadeData())
     transRef.start();
-  }, [index, transRef]);
+  }, [dispatch, index, transRef]);
+
   return (React.createElement("div", { className: `${styles.root}`, onClick: onClick }, transitions((style, i) => {
     const Page = pages[i];
     return React.createElement(Page, { style: style });
