@@ -22,7 +22,9 @@ export default function Header() {
             <Link to={value.to}  className={clsx(location.pathname === `${value.to}` && styles.active)}>{value.name}</Link>
           </li>
         ))}
-        <Switcher />
+        <div className={styles.switcher}>
+          <Switcher />
+        </div>
       </ul>
     </div>
   )
