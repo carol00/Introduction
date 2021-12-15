@@ -35,15 +35,14 @@ export default function Introduction() {
   const rotateTitleTotal = useSelector(state => state.rotateTitle.total)
   const [ fullState, setFullState ] = useState(false)
   const fullAmount = 3
-
   const dispatch = useDispatch()
-  dispatch(fetchTitleData())
 
   useEffect(() => {
+    dispatch(fetchTitleData())
     if (rotateTitleTotal === fullAmount) {
       setFullState(true)
     }
-  }, [fullState, rotateTitleTotal])
+  }, [dispatch, fullState, rotateTitleTotal])
 
   return (
     <div className={styles.root}>

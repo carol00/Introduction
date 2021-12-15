@@ -1,6 +1,7 @@
 import Avatar from '../../component/avatar/Avatar'
 import styles from './family.module.sass'
 import Icon from '@mdi/react'
+import { useEffect } from 'react'
 import { mdiHomeAnalytics } from '@mdi/js'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchPhotoData } from '../../redux/familySlice'
@@ -45,7 +46,10 @@ const LifePhoto = () => {
 
 export default function Family() {
   const dispatch = useDispatch()
-  dispatch(fetchPhotoData())
+
+  useEffect(() => {
+    dispatch(fetchPhotoData())
+  }, [dispatch]);
 
   return (
     <div className={styles.root}>
