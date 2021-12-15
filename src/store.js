@@ -4,6 +4,7 @@ import rotateTitleReducer from './redux/rotateTitleSlice'
 import introductionReducer from './redux/introductionSlice'
 import familyReducer from './redux/familySlice'
 import handMadeReducer from './redux/handMadeSlice'
+import switcherReducer from './redux/switcherSlice'
 
 export const store = configureStore({
   reducer: {
@@ -11,6 +12,7 @@ export const store = configureStore({
     rotateTitle: rotateTitleReducer,
     introduction: introductionReducer,
     family: familyReducer,
-    handMade: handMadeReducer
+    handMade: handMadeReducer,
+    switcher: switcherReducer
   },
 })
