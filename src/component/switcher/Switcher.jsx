@@ -2,21 +2,29 @@ import styles from './switcher.module.sass'
 import clsx from 'clsx'
 import { useSelector, useDispatch } from 'react-redux'
 import { lightSwitcher } from '../../redux/switcherSlice'
-import { useCallback } from 'react'
+import { useCallback, useEffect } from 'react'
 
 export default function Switcher() {
   const light = useSelector(state => state.switcher.light)
   const dispatch = useDispatch()
 
-  const toggleLight = useCallback(() => {
+  const switchLight = useCallback(() => {
     dispatch(lightSwitcher())
   }, [dispatch])
+
+  useEffect(() => {
+    if (light) {
+      document.querySelector('html').style.background = 'white'
+      return;
+    }
+    document.querySelector('html').style.background = 'black'
+  }, [light]);
 
   return (
     <div>
       <label className={styles.root}>
         <input type="checkbox" />
-        <span onClick={() => toggleLight()} className={clsx(styles.slider, light && styles.switch)}></span>
+        <span onClick={() => switchLight()} className={clsx(styles.slider, light && styles.switch)}></span>
       </label>
     </div>
   )
