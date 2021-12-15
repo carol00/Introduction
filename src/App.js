@@ -7,7 +7,6 @@ import HandMade from './view/handMade/HandMade'
 import Goal from './view/goal/Goal'
 import TestView from './view/testView/TestView'
 import Header from './component/header/Header'
-import Footer from './component/footer/Footer'
 
 const RouterPage = () => {
   return (
