@@ -29,7 +29,6 @@ function App() {
       <Router>
         <Header />
         <RouterPage />
-        <Footer />
       </Router>
     </div>
   );
