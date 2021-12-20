@@ -1,51 +1,86 @@
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import { useCallback, useState } from 'react'
+import PropTypes from 'prop-types'
+import Slider from '@mui/material/Slider'
+import Tooltip from '@mui/material/Tooltip'
+import Box from '@mui/material/Box'
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports'
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import Typography from '@mui/material/Typography';
+import styles from './experience.module.sass'
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent'
+import TimelineItem from '@mui/lab/TimelineItem'
+import TimelineContent from '@mui/lab/TimelineContent'
+import TimelineDot from '@mui/lab/TimelineDot'
+import { createTheme } from '@mui/material/styles'
+import clsx from 'clsx'
 
-const company = [
-  { name: '宣揚', startTime: '20**', deadline: '2017/10', content: 'Pos', icon: <LaptopMacIcon /> },
-  { name: '長青', startTime: '2017/11', deadline: '2021/05', content: 'Game', icon: <SportsEsportsIcon /> },
-  { name: '弈樂', startTime: '2021/11/8', deadline: '', content: 'Game', icon: <SportsEsportsIcon /> }
+function ValueLabelComponent(props) {
+  const { children, value } = props;
+
+  return (
+    <Tooltip enterTouchDelay={0} placement="top" title={value}>
+      {children}
+    </Tooltip>
+  );
+}
+
+ValueLabelComponent.propTypes = {
+  children: PropTypes.element.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+const companyData = [
+  { name: '宣揚', time: '2016/01~2017/10', content: '前台、後台', icon: <LaptopMacIcon /> },
+  { name: '長青', time: '2017/11~2021/05',  content: '官網、H5老虎機', icon: <SportsEsportsIcon /> },
+  { name: '弈樂', time: '2021/11/08 ~', content: '111', icon: <SportsEsportsIcon /> }
 ]
 
-export default function Experience(props) {
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#a8a5a5'
+    },
+  },
+})
+
+export default function Experience() {
+  const [selected, setSelected] = useState(0)
+  const totalItem = 2
+  const selectedItem = useCallback(() => {
+    if (selected >= totalItem) return
+    setSelected(selected + 1)
+  }, [selected])
+
   return (
-    <div>
-      <h2>{props.title}</h2>
-      <Timeline position="alternate">
-        {company.map((value,index) => (
-        <TimelineItem key={index}>
-          <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
-            align="right"
-            variant="body2"
-            color="text.secondary"
-          >
-            {value.startTime} - {value.deadline}
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot>
-              {value.icon}
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h6" component="span">
-              {value.name}
-            </Typography>
-            <Typography>{value.content}</Typography>
-          </TimelineContent>
-        </TimelineItem>
-      ))}
-      </Timeline>
+    <div className={styles.root}>
+      <div className={styles.container}>
+        <Box sx={{ width: 350 }}  onClick={() => selectedItem()} className={styles.box}>
+          <div className={styles.content}>
+            {companyData.map((value, index) => (
+              <div key={index} className={styles.items}>
+                <TimelineItem>
+                  <TimelineOppositeContent className={clsx(styles.name, selected === index && styles.activeColor)}>
+                    {value.name}
+                    <div className={styles.text}><p>{value.content}</p></div>
+                    </TimelineOppositeContent>
+                  <TimelineDot className={clsx(styles.icon, selected === index && styles.activeScale)}>{value.icon}</TimelineDot>
+                  <TimelineContent className={clsx(styles.time, selected === index && styles.activeColor)} >{value.time}</TimelineContent>
+                </TimelineItem>
+              </div>
+            ))}
+          </div>
+          <div className={styles.sliderBar}>
+            <Slider
+              components={{
+                ValueLabel: ValueLabelComponent,
+              }}
+              aria-label="Volume"
+              theme={theme}
+              value={selected}
+              max={2.4}
+            />
+          </div>
+        </Box>
+      </div>
     </div>
-  )
+  );
 }

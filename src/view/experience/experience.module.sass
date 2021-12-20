@@ -1,0 +1,75 @@
+@use '../../style/variable' as variable
+// import bg from './assets/bg/bg1.jpg'
+
+.root
+  width: 100%
+  height: 100%
+  +variable.set-flex(center, center)
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background-image: url('../../../src/assets/bg/bg15.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    filter: blur(5px)
+    z-index: -1
+  .container
+    +variable.set-flex(center, center)
+    .box
+      position: relative
+      background: #000000b5
+      width: 500px
+      height: 600px
+      border-radius: 10px
+      box-shadow: 2px 0px 4px #726e6e
+      .content
+        width: 100%
+        .items
+          margin-bottom: 9rem
+          .icon
+            background: #989090
+            transform: scale(1.1)
+            z-index: 1
+            margin: auto
+            // transition: .4s
+          .name, .time
+            margin: auto
+            color: #9f9b9b
+            font-weight: 800
+          .name
+            font-size: 22px
+            +variable.set-flex(center, center)
+            .text
+              position: absolute
+              font-size: 16px
+              margin-top: 3rem
+          .time
+            font-size: 15px
+        .activeScale
+          animation: scale 0.8s
+          animation-fill-mode: forwards
+        .activeColor
+          animation: color 1.2s
+          animation-fill-mode: forwards
+      .sliderBar
+        width: 100%
+        position: absolute
+        transform: rotate(90deg)
+        top: 280px
+        color: #422431
+
+@keyframes scale
+  50%
+    transform: scale(1.5)
+  100%
+    color: #c64747
+    background: #FFF
+    transform: scale(1.3)
+
+@keyframes color
+  100%
+    color: #cc8787
+    
