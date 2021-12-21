@@ -21,8 +21,6 @@
       // filter: blur(1px)
       z-index: -1
       +variable.set-flex(center, center)
-      // animation: scale 1s
-      // animation-fill-mode: forwards
     .item
       +variable.set-flex(center, center)
       .text
@@ -37,8 +35,9 @@
         color: #000
         background: #FFF
         border-radius: 50%
-
-  @keyframes scale
-    100%
-      transform: scale(2.8)
-    
+  .scale1
+    transform: scale(1.6)
+    transition: all 1s ease-out
+  .scale2
+    transform: scale(3)
+    transition: all 1s ease-out

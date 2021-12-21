@@ -2,6 +2,7 @@ import { useCallback, useState } from 'react'
 import Icon from '@mdi/react'
 import { mdiFlagCheckered } from '@mdi/js'
 import styles from './goal.module.sass'
+import clsx from 'clsx'
 
 const goalData = [
   {title: '短期', content: '學好react', src: 'bg17.jpg'},
@@ -9,7 +10,7 @@ const goalData = [
   {title: '長期', content: '看F1現場！！', src: 'bg17.jpg'}
 ]
 
-// const scale = [ 0, 1.6, 2.8 ]
+const scaleName = [ 'scale0', 'scale1', 'scale2' ]
 const flagTranslate = [
   {width: '120px', x: '-146px', y: '455px'},
   {width: '90px',x: '-143px', y: '191px'},
@@ -19,19 +20,19 @@ const flagTranslate = [
 export default function Goal() {
   const [ items, setItems ] = useState(0)
   const totalItems = 2
-  const transformTest = useCallback(() => {
-    console.log('test');
+
+  const transform = useCallback(() => {
     if (items >= totalItems) return
     setItems(items + 1)
   }, [items])
 
   return (
     <div className={styles.root}>
-      <div className={styles.container}>
-        <div className={styles.content}>
+      <div className={clsx(styles.container, items && styles[`${scaleName[items]}`])}>
+        <div className={clsx(styles.content)}>
           {goalData.map((item, index) => (
             <div key={index} className={styles.item} style={{transform: `translate(${flagTranslate[index].x}, ${flagTranslate[index].y})`}}
-              onClick={() => transformTest()}>
+              onClick={() => transform()}>
               <div className={styles.text}>
                 <h3>{item.title}</h3>
                 <p>{item.content}</p>
