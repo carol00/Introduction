@@ -46,10 +46,14 @@ export default function Introduction() {
 
   return (
     <div className={styles.root}>
-      <About />
-      <div className={styles.content}>
-        <LightBulb switcher={fullState} />
-        <Description />
+      <div className={styles.wrap}>
+        <div className={styles.container}>
+          <About />
+          <div className={styles.content}>
+            <LightBulb switcher={fullState} />
+            <Description />
+          </div>
+        </div>
       </div>
     </div>
   )

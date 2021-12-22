@@ -4,20 +4,40 @@ $pic-size: 150px
 .root
   width: 100%
   height: 100%
-  padding: (+variable.$header-height + 100) 0 0 0
-  background: #000
-  > div
+  &::before
     +variable.set-flex(center, center)
-  .content
-    position: relative
-    margin-top: 2.5rem
-  .name
-    margin-left: 20px
-    h2
-      color: #d4dedb
-    p
-      color: #959998
-      font-size: 18px
-  .description
-    +variable.set-flex(center, center)
-    margin: 3rem 0
+    width: 100%
+    height: 100%
+    content: ''
+    position: absolute
+    background-image: url('../../../src/assets/bg/bg21.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    filter: grayscale(100%)
+    z-index: -1
+  .wrap
+    width: 100%
+    height: 100%
+    display: grid
+    justify-content: center
+    align-content: center
+    .container
+      width: 100%
+      height: 100%
+      .about
+        +variable.set-flex(center, center)
+      .content
+        +variable.set-flex(center, center)
+        position: relative
+        margin-top: 2.5rem
+      .name
+        margin-left: 20px
+        h2
+          color: #d4dedb
+        p
+          color: #959998
+          font-size: 18px
+      .description
+        +variable.set-flex(center, center)
+        margin: 3rem 0
