@@ -49,13 +49,10 @@ $pic-size: 150px
         margin: 3rem 0
   .dark
     &::before
-      filter: grayscale(90%)
-      transition: filter 0.7s
+      +variable.set-grayscale(90%, 1s)
   .light
     &::before
-      filter: grayscale(80%)
-      transition: filter 0.7s
+      +variable.set-grayscale(80%, 1s)
   .brighter
     &::before
-      filter: grayscale(0%)
-      transition: filter 0.7s
+      +variable.set-grayscale(20%, 3s)

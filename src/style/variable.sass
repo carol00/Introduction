@@ -9,6 +9,10 @@ $header-height: 80px
   align-items: $vertical
   justify-content: $horizontal
 
+=set-grayscale($grayscale, $time)
+  filter: grayscale($grayscale)
+  transition: filter $time
+
 =media-breakpoints($width)
   @media screen and (min-width: $width)
     @content
