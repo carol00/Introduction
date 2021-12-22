@@ -6,6 +6,7 @@ import RotateTitle from '../../component/rotateTitle/RotateTitle'
 import LightBulb from '../../component/lightBulb/LightBulb'
 import { fetchTitleData } from '../../redux/introductionSlice'
 import Avatar from '../../component/avatar/Avatar'
+import clsx from 'clsx'
 
 function About() {
   return (
@@ -31,6 +32,8 @@ function Description() {
   )
 }
 
+const lightLevel = ['dark', 'light', 'brighter']
+
 export default function Introduction() {
   const rotateTitleTotal = useSelector(state => state.rotateTitle.total)
   const [ fullState, setFullState ] = useState(false)
@@ -46,7 +49,8 @@ export default function Introduction() {
 
   return (
     <div className={styles.root}>
-      <div className={styles.wrap}>
+      <div className={clsx(styles.wrap, rotateTitleTotal && styles[`${lightLevel[rotateTitleTotal - 1]}`])}>
+        <div className={styles.stars}></div>
         <div className={styles.container}>
           <About />
           <div className={styles.content}>
