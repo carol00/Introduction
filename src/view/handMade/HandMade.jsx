@@ -60,6 +60,17 @@ const Dog = ({data}) => {
     </div>
   )
 }
+// 進階項圈
+const AdvancedDog = ({data}) => {
+  const advancedDogData = data.advancedDog
+  return (
+    <div className={styles.picContent}>
+      {advancedDogData.map((value, index) => (
+        <ArtWorkPic key={index} img={value.src} title={value.title} width={220} height={220} />
+      ))}
+    </div>
+  )
+}
 
 const pages = [
   ({ style, data }) => React.createElement(animated.div, { className: `${styles.container}`, style: Object.assign(Object.assign({}, style)) }, <Crystal data={data} />),
@@ -67,6 +78,7 @@ const pages = [
   ({ style, data }) => React.createElement(animated.div, { className: `${styles.container}`, style: Object.assign(Object.assign({}, style)) }, <Herbarium data={data} />),
   ({ style, data }) => React.createElement(animated.div, { className: `${styles.container}`, style: Object.assign(Object.assign({}, style)) }, <Birthday data={data} />),
   ({ style, data }) => React.createElement(animated.div, { className: `${styles.container}`, style: Object.assign(Object.assign({}, style)) }, <Dog data={data} />),
+  ({ style, data }) => React.createElement(animated.div, { className: `${styles.container}`, style: Object.assign(Object.assign({}, style)) }, <AdvancedDog data={data} />),
 ];
 
 export default function HandMade() {
@@ -74,7 +86,7 @@ export default function HandMade() {
   const data = useSelector(state => state.handMade)
 
   const [index, set] = useState(0);
-  const onClick = useCallback(() => set(state => (state + 1) % 4), []);
+  const onClick = useCallback(() => set(state => (state + 1) % 6), []);
   const transRef = useSpringRef();
   const transitions = useTransition(index, {
     ref: transRef,
