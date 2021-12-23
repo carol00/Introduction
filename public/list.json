@@ -46,16 +46,17 @@
     "crystal": [
       {"src": "../../assets/handMade/crystal/FN1.jpg", "title": "銅線" },
       {"src": "../../assets/handMade/crystal/FN2.jpg", "title": "上色" },
+      {"src": "../../assets/handMade/crystal/FN6.jpg", "title": "耳環" },
       {"src": "../../assets/handMade/crystal/FN3.jpg", "title": "耳環" },
       {"src": "../../assets/handMade/crystal/FN4.jpg", "title": "耳環" },
       {"src": "../../assets/handMade/crystal/FN5.jpg", "title": "耳環" },
-      {"src": "../../assets/handMade/crystal/FN6.jpg", "title": "耳環" },
       {"src": "../../assets/handMade/crystal/FN7.jpg", "title": "書籤" },
-      {"src": "../../assets/handMade/crystal/FN9.jpg", "title": "玫瑰擺飾" },
       {"src": "../../assets/handMade/crystal/FN10.jpg", "title": "髮夾" },
-      {"src": "../../assets/handMade/crystal/FN11.jpg", "title": "髮夾" },
+      {"src": "../../assets/handMade/crystal/FN11.jpg", "title": "髮夾" }
+    ],
+    "advancedCrystal": [
+      {"src": "../../assets/handMade/crystal/FN9.jpg", "title": "玫瑰" },
       {"src": "../../assets/handMade/crystal/FN12.jpg", "title": "戒指" },
-      {"src": "../../assets/handMade/crystal/FN13.jpg", "title": "可調" },
       {"src": "../../assets/handMade/crystal/FN14.jpg", "title": "蝴蝶戒指" },
       {"src": "../../assets/handMade/crystal/FN15.jpg", "title": "蝴蝶胸針" },
       {"src": "../../assets/handMade/crystal/FN16.jpg", "title": "新娘髮飾" }

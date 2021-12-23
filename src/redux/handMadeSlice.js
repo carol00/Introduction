@@ -25,6 +25,7 @@ export const handMadeSlice = createSlice({
        state.crystal = action.payload.handMade.crystal
        state.birthday = action.payload.handMade.birthday
        state.dog = action.payload.handMade.dog
+       state.advancedCrystal = action.payload.handMade.advancedCrystal
       }
     )
   }

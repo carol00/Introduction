@@ -27,6 +27,17 @@ const Crystal = ({data}) => {
     </div>
   )
 }
+// 進階水晶花
+const AdvancedCrystal = ({data}) => {
+  const advancedCrystalData = data.advancedCrystal
+  return (
+    <div className={styles.picContent}>
+      {advancedCrystalData.map((value, index) => (
+        <ArtWorkPic key={index} img={value.src} title={value.title} width={220} height={220} />
+      ))}
+    </div>
+  )
+}
 // 蛋糕 乾燥花 音樂盒
 const Birthday = ({data}) => {
   const herbariumData = data.birthday
@@ -52,6 +63,7 @@ const Dog = ({data}) => {
 
 const pages = [
   ({ style, data }) => React.createElement(animated.div, { className: `${styles.container}`, style: Object.assign(Object.assign({}, style)) }, <Crystal data={data} />),
+  ({ style, data }) => React.createElement(animated.div, { className: `${styles.container}`, style: Object.assign(Object.assign({}, style)) }, <AdvancedCrystal data={data} />),
   ({ style, data }) => React.createElement(animated.div, { className: `${styles.container}`, style: Object.assign(Object.assign({}, style)) }, <Herbarium data={data} />),
   ({ style, data }) => React.createElement(animated.div, { className: `${styles.container}`, style: Object.assign(Object.assign({}, style)) }, <Birthday data={data} />),
   ({ style, data }) => React.createElement(animated.div, { className: `${styles.container}`, style: Object.assign(Object.assign({}, style)) }, <Dog data={data} />),
