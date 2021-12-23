@@ -37,7 +37,7 @@ const companyData = [
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#0a516b'
+      main: '#285869'
     },
   },
 })
