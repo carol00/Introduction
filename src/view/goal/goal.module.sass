@@ -82,14 +82,18 @@ $cloud-border: 3px solid #dedede
         transform: scale(0.8)
         // visibility: hidden
       .moveCloud1
-        animation: moveLeft 2.5s
+        animation: moveLeft 2.7s
         animation-fill-mode: forwards
       .moveCloud2
-        animation: moveRight 2s
+        animation: moveRight 2.5s
         animation-fill-mode: forwards
       .moveCloud3
-        animation: scale 1.5s
+        animation: scale 1s
         animation-fill-mode: forwards
+  .showF1
+    animation: transformImg 1.2s
+    animation-fill-mode: forwards
+    animation-delay: 0.2s
   @keyframes moveLeft
     95%
       transform: scale(1.2) translateX(-2000px)
@@ -105,3 +109,8 @@ $cloud-border: 3px solid #dedede
       transform: scale(5)
     100%
       filter: opacity(0)
+  @keyframes transformImg
+    0%
+      background-image: url('../../../src/assets/bg/F1-1.jpg')
+    100%
+      background-image: url('../../../src/assets/bg/F1-1.jpg')

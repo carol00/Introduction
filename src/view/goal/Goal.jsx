@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import styles from './goal.module.sass'
 import clsx from 'clsx'
 import { addAmount } from '../../redux/cloudAmountSlice'
@@ -33,9 +33,12 @@ const Cloud = ({item, index}) => {
 }
 
 export default function Goal() {
+  const clickCloudAmount = useSelector(state => state.cloudAmount.amount)
+  const cloudTotal = 3
+
   return (
     <div className={styles.root}>
-      <div className={clsx(styles.container)}>
+      <div className={clsx(styles.container, clickCloudAmount === cloudTotal && styles.showF1)}>
         <div className={clsx(styles.content)}>
           {goalData.map((item, index) => (
             <Cloud key={index} item={item} index={index}/>
