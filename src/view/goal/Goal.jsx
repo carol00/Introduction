@@ -5,9 +5,9 @@ import clsx from 'clsx'
 import { addAmount } from '../../redux/cloudAmountSlice'
 
 const goalData = [
-  {title: '短期', content: '學好React', src: 'bg17.jpg'},
-  {title: '中期', content: '獨立完成維護工作', src: 'bg17.jpg'},
-  {title: '長期', content: '看F1現場！！', src: 'bg17.jpg'}
+  {title: '短期', content: '學好React'},
+  {title: '中期', content: '獨立完成維護工作'},
+  {title: '長期', content: '看F1現場！！'}
 ]
 
 const moveCloudAniName = [ 'moveCloud1', 'moveCloud2', 'moveCloud3' ]
