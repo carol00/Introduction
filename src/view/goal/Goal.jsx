@@ -1,6 +1,4 @@
 import { useCallback, useState } from 'react'
-// import Icon from '@mdi/react'
-// import { mdiFlagCheckered } from '@mdi/js'
 import styles from './goal.module.sass'
 import clsx from 'clsx'
 
@@ -10,35 +8,33 @@ const goalData = [
   {title: '長期', content: '看F1現場！！', src: 'bg17.jpg'}
 ]
 
-// const scaleName = [ 'scale0', 'scale1', 'scale2' ]
-// const flagTranslate = [
-//   {width: '120px', x: '-146px', y: '455px'},
-//   {width: '90px',x: '-143px', y: '191px'},
-//   {width: '30px',x: '-130px', y: '-62px'},
-// ]
-
+const moveCloudAniName = [ 'moveCloud1', 'moveCloud2', 'moveCloud3' ]
 const cloudPos = [ 'cloudPos1', 'cloudPos2', 'cloudPos3' ]
 
-export default function Goal() {
-  const [ items, setItems ] = useState(0)
-  const totalItems = 2
-
-  const transform = useCallback(() => {
-    if (items >= totalItems) return
-    setItems(items + 1)
-  }, [items])
+const Cloud = ({item, index}) => {
+  const [ transform, setTransform ] = useState(false)
+  const clickTransform = useCallback(() => {
+    if (transform) return
+    setTransform(!transform)
+  }, [transform])
 
   return (
-    <div className={styles.root} onClick={() => transform()}>
+    <div className={clsx(styles.cloudWrap, styles[`${cloudPos[index]}`], transform && styles[moveCloudAniName[index]])}>
+      <div className={clsx(styles.cloud)} onClick={() => clickTransform()}>
+        <h3>{item.title}</h3>
+        <p>{item.content}</p>
+      </div>
+    </div>
+  )
+}
+
+export default function Goal() {
+  return (
+    <div className={styles.root}>
       <div className={clsx(styles.container)}>
         <div className={clsx(styles.content)}>
           {goalData.map((item, index) => (
-            <div key={index} className={clsx(styles.cloudWrap, styles[`${cloudPos[index]}`])}>
-              <div className={clsx(styles.cloud)} onClick={() => transform()}>
-                <h3>{item.title}</h3>
-                <p>{item.content}</p>
-              </div>
-            </div>
+            <Cloud key={index} item={item} index={index}/>
           ))}
         </div>
       </div>
