@@ -26,7 +26,7 @@ const Cloud = ({item, index}) => {
     <div className={clsx(styles.cloudWrap, styles[`${cloudPos[index]}`], transform && styles[moveCloudAniName[index]])}>
       <div className={clsx(styles.cloud)} onClick={() => clickTransform()}>
         <h3>{item.title}</h3>
-        <p>{item.content}</p>
+        <p className={styles.depiction}>{item.content}</p>
       </div>
     </div>
   )
