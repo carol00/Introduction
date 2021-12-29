@@ -5,13 +5,16 @@ import { fetchHandMadeData } from '../.././redux/handMadeSlice'
 import ArtWorkPic from '../../component/artWorkPic/ArtWorkPic'
 import styles from './handMade.module.sass'
 
+const imgWidth = 270
+const imgHeight = 270
+
 // 浮游花
 const Herbarium = ({data}) => {
   const herbariumData = data.herbarium
   return (
     <div className={styles.picContent}>
       {herbariumData.map((value, index) => (
-        <ArtWorkPic key={index} img={value.src} title={value.title} width={220} height={220} />
+        <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
       ))}
     </div>
   )
@@ -22,7 +25,7 @@ const Crystal = ({data}) => {
   return (
     <div className={styles.picContent}>
       {herbariumData.map((value, index) => (
-        <ArtWorkPic key={index} img={value.src} title={value.title} width={220} height={220} />
+        <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
       ))}
     </div>
   )
@@ -33,7 +36,7 @@ const AdvancedCrystal = ({data}) => {
   return (
     <div className={styles.picContent}>
       {advancedCrystalData.map((value, index) => (
-        <ArtWorkPic key={index} img={value.src} title={value.title} width={220} height={220} />
+        <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
       ))}
     </div>
   )
@@ -44,7 +47,7 @@ const Birthday = ({data}) => {
   return (
     <div className={styles.picContent}>
       {herbariumData.map((value, index) => (
-        <ArtWorkPic key={index} img={value.src} title={value.title} width={220} height={220} />
+        <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
       ))}
     </div>
   )
@@ -55,7 +58,7 @@ const Dog = ({data}) => {
   return (
     <div className={styles.picContent}>
       {herbariumData.map((value, index) => (
-        <ArtWorkPic key={index} img={value.src} title={value.title} width={220} height={220} />
+        <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
       ))}
     </div>
   )
@@ -66,7 +69,7 @@ const AdvancedDog = ({data}) => {
   return (
     <div className={styles.picContent}>
       {advancedDogData.map((value, index) => (
-        <ArtWorkPic key={index} img={value.src} title={value.title} width={220} height={220} />
+        <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={260} />
       ))}
     </div>
   )
