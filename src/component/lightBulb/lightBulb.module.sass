@@ -22,12 +22,18 @@ $openLight-color: #f1f390
   .openLightBulb
     animation: openLightAni 2s
     animation-fill-mode: forwards
+    animation-delay: 0.6s
   .openElectrical
-    color: #6b6a6ade
+    animation: openElectricalAni 0.5s
+    animation-fill-mode: forwards
+    animation-delay: 0.5s
 
-@keyframes openLightAni
-  50%
-    color:#d9db7c
-  100%
-    color: $openLight-color
-    filter: drop-shadow(0px -3px 10px #ccc)
+  @keyframes openLightAni
+    50%
+      color:#d9db7c
+    100%
+      color: $openLight-color
+      filter: drop-shadow(0px -3px 10px #ccc)
+  @keyframes openElectricalAni
+    100%
+      color: #6b6a6ade
