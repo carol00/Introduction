@@ -1,0 +1,89 @@
+{
+  "titleData": [
+    {"title": "興趣", "content": "F1、手做"},
+    {"title": "運動", "content": "羽球、撞球"},
+    {"title": "出生地", "content": "高雄"}
+  ],
+  "family": {
+    "lifePhotoData": [
+      {"title": "12/4", "src": "../../assets/family/life/d1.jpg"},
+      {"title": "", "src": "../../assets/family/life/d2.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d3.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d4.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d5.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d6.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d7.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d8.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d9.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d10.jpg"},
+      {"title": "", "src": "../../assets/family/life/d11.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d13.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d14.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d15.jpg"},
+      {"title": "", "src": "../../assets/family/life/d16.jpg"},
+      {"title": "", "src": "../../assets/family/life/d17.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d18.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d19.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/h1.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/h2.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/h3.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/w1.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/w2.jpg"}
+    ],
+    "avatar": [
+      {"src": "../../assets/family/avatar/3.jpg" },
+      {"src": "../../assets/family/avatar/4.jpg" }
+    ]
+  },
+  "handMade": {
+    "herbarium": [
+      {"src": "../../assets/handMade/herbarium/1.jpg", "title": "乾燥花" },
+      {"src": "../../assets/handMade/herbarium/2.jpg", "title": "組合、固定" },
+      {"src": "../../assets/handMade/herbarium/3.jpg", "title": "浮游花" },
+      {"src": "../../assets/handMade/herbarium/4.jpg", "title": "浮游花" },
+      {"src": "../../assets/handMade/herbarium/5.jpg", "title": "浮游花" }
+    ],
+    "crystal": [
+      {"src": "../../assets/handMade/crystal/FN1.jpg", "title": "銅線" },
+      {"src": "../../assets/handMade/crystal/FN2.jpg", "title": "上色" },
+      {"src": "../../assets/handMade/crystal/FN6.jpg", "title": "耳環" },
+      {"src": "../../assets/handMade/crystal/FN11.jpg", "title": "髮夾" },
+      {"src": "../../assets/handMade/crystal/FN10.jpg", "title": "髮夾" },
+      {"src": "../../assets/handMade/crystal/FN3.jpg", "title": "耳環" },
+      {"src": "../../assets/handMade/crystal/FN4.jpg", "title": "耳環" },
+      {"src": "../../assets/handMade/crystal/FN5.jpg", "title": "耳環" },
+      {"src": "../../assets/handMade/crystal/FN7.jpg", "title": "書籤" }
+    ],
+    "advancedCrystal": [
+      {"src": "../../assets/handMade/crystal/FN9.jpg", "title": "玫瑰" },
+      {"src": "../../assets/handMade/crystal/FN12.jpg", "title": "戒指" },
+      {"src": "../../assets/handMade/crystal/FN14.jpg", "title": "蝴蝶戒指" },
+      {"src": "../../assets/handMade/crystal/FN15.jpg", "title": "蝴蝶胸針" },
+      {"src": "../../assets/handMade/crystal/FN16.jpg", "title": "新娘髮飾" }
+    ],
+    "birthday": [
+      {"src": "../../assets/handMade/birthday/1.jpg", "title": "乾燥花" },
+      {"src": "../../assets/handMade/birthday/2.jpg", "title": "乾燥花" },
+      {"src": "../../assets/handMade/birthday/3.jpg", "title": "藍芽音樂盒" },
+      {"src": "../../assets/handMade/birthday/4.jpg", "title": "抹面" },
+      {"src": "../../assets/handMade/birthday/5.jpg", "title": "蛋糕" }
+    ],
+    "dog": [
+      {"src": "../../assets/handMade/dog/1-1.jpg", "title": "項圈" },
+      {"src": "../../assets/handMade/dog/1-2.jpg", "title": "項圈" },
+      {"src": "../../assets/handMade/dog/1-5.jpg", "title": "項圈" },
+      {"src": "../../assets/handMade/dog/1-3.jpg", "title": "貓咪扣" },
+      {"src": "../../assets/handMade/dog/1-4.jpg", "title": "項圈" },
+      {"src": "../../assets/handMade/dog/2-1.jpg", "title": "領巾" },
+      {"src": "../../assets/handMade/dog/2-2.jpg", "title": "領巾" },
+      {"src": "../../assets/handMade/dog/2-3.jpg", "title": "領巾" },
+      {"src": "../../assets/handMade/dog/3-1.jpg", "title": "髮帶" },
+      {"src": "../../assets/handMade/dog/3-2.jpg", "title": "髮帶" }
+    ],
+    "advancedDog": [
+      {"src": "../../assets/handMade/dog/4-1.jpg", "title": "項圈組合" },
+      {"src": "../../assets/handMade/dog/4-2.jpg", "title": "三角領巾" },
+      {"src": "../../assets/handMade/dog/4-3.jpg", "title": "領帶" }
+    ]
+  }
+}
