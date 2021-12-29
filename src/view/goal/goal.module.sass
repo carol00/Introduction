@@ -8,6 +8,8 @@ $cloud3-scale: 0.8
 $moveX: 2000px
 $disappear: 0
 $appear: 1
+$title-size: 30px
+$depiction-size: 23px
 
 .root
   width: 100%
@@ -63,9 +65,11 @@ $appear: 1
             right: 171px
           h3
             color: #6fa0d6
+            font-size: $title-size
           .depiction
             color: #6e6767
             text-shadow: 2px 5px 7px #4886cb9e
+            font-size: $depiction-size
       .cloudPos1
         display: flex
         justify-content: flex-end
@@ -92,8 +96,11 @@ $appear: 1
         z-index: 1
         filter: drop-shadow(-18px -5px 18px #c4b9b985)
         transform: scale($cloud3-scale)
-        font-size: 38px
         // visibility: hidden
+        h3
+          font-size: ($title-size + 25) !important
+        .depiction
+          font-size: ($depiction-size + 25) !important
       .moveCloud1
         animation: moveLeft 1.5s
         animation-fill-mode: forwards
