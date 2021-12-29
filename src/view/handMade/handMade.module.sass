@@ -3,7 +3,19 @@
 .root
   width: 100%
   height: 100%
-  padding: (+variable.$header-height - 50) 0 0 0
+  position: relative
+  &::before
+    content: ''
+    width: 100%
+    height: 100%
+    background-image: url('../../../src/assets/bg/flore-5.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100% 100%
+    +variable.set-flex(center, center)
+    filter: grayscale(90%) blur(3px)
+    // filter: grayscale(90%)
+    position: absolute
   .container
     cursor: pointer
     position: fixed
