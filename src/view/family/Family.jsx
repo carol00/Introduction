@@ -33,7 +33,7 @@ const LifePhoto = () => {
 
   return (
     <div>
-      <Box sx={{ width: 800, height: 700, overflowY: 'auto' }}>
+      <Box sx={{ width: 950, height: 700, overflowY: 'auto' }}>
         <ImageList variant="masonry" cols={6} gap={8}>
           {photoData.map((item, index) => (
             <ImageListItem key={index}>

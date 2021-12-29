@@ -2,8 +2,8 @@
 
 .root
   .wrap
-    width: 220px
-    height: 250px
+    width: 250px
+    height: 280px
     margin-right: 20px
     perspective: 1000px
   .content
@@ -18,16 +18,20 @@
     position: absolute
     border-radius: 10px
     background: #b8e5d63b
-    font-size: 27px
+    font-size: 35px
     font-weight: 600
     +variable.set-flex(center, center)
     backface-visibility: hidden
   .front
     background: #b8e5d636
     color: #b8c9c4
+    text-shadow: 2px 3px 7px #acafb29e
+    &:hover
+      background: #ddfaf045
   .back
-    background: #ddddddb8
+    background: #b3aeaeb8
     color: #333232
     transform: rotateY(180deg)
+    text-shadow: 2px 5px 7px #bbbfc49e
   .flip
     transform: rotateY(180deg)
