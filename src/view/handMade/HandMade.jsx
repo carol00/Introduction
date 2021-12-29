@@ -3,19 +3,36 @@ import { useTransition, animated, useSpringRef } from '@react-spring/web'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchHandMadeData } from '../.././redux/handMadeSlice'
 import ArtWorkPic from '../../component/artWorkPic/ArtWorkPic'
+import Icon from '@mdi/react'
+import { mdiFlowerOutline } from '@mdi/js';
+import { mdiDogSide } from '@mdi/js'; 
 import styles from './handMade.module.sass'
 
 const imgWidth = 270
 const imgHeight = 270
 
+const TitleContent = ({title, iconName}) => {
+  return (
+  <div className={styles.titleContent}>
+    <div className={styles.icon}>
+      <Icon path={iconName} />
+    </div>
+    <h1>{title}</h1>
+  </div>
+  )
+}
+
 // 浮游花
 const Herbarium = ({data}) => {
   const herbariumData = data.herbarium
   return (
-    <div className={styles.picContent}>
-      {herbariumData.map((value, index) => (
-        <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
-      ))}
+    <div className={styles.items}>
+      <TitleContent title={'浮游花'} iconName={mdiFlowerOutline} />
+      <div className={styles.picContent}>
+        {herbariumData.map((value, index) => (
+          <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
+        ))}
+      </div>
     </div>
   )
 }
@@ -23,10 +40,13 @@ const Herbarium = ({data}) => {
 const Crystal = ({data}) => {
   const herbariumData = data.crystal
   return (
-    <div className={styles.picContent}>
-      {herbariumData.map((value, index) => (
-        <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
-      ))}
+    <div className={styles.items}>
+      <TitleContent title={'水晶花'} iconName={mdiFlowerOutline} />
+      <div className={styles.picContent}>
+        {herbariumData.map((value, index) => (
+          <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
+        ))}
+      </div>
     </div>
   )
 }
@@ -34,10 +54,13 @@ const Crystal = ({data}) => {
 const AdvancedCrystal = ({data}) => {
   const advancedCrystalData = data.advancedCrystal
   return (
-    <div className={styles.picContent}>
-      {advancedCrystalData.map((value, index) => (
-        <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
-      ))}
+    <div className={styles.items}>
+      <TitleContent title={'水晶花'} iconName={mdiFlowerOutline} />
+      <div className={styles.picContent}>
+        {advancedCrystalData.map((value, index) => (
+          <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
+        ))}
+      </div>
     </div>
   )
 }
@@ -45,10 +68,13 @@ const AdvancedCrystal = ({data}) => {
 const Birthday = ({data}) => {
   const herbariumData = data.birthday
   return (
-    <div className={styles.picContent}>
-      {herbariumData.map((value, index) => (
-        <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
-      ))}
+    <div className={styles.items}>
+      <TitleContent title={'慶生'} iconName={mdiFlowerOutline} />
+      <div className={styles.picContent}>
+        {herbariumData.map((value, index) => (
+          <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
+        ))}
+      </div>
     </div>
   )
 }
@@ -56,10 +82,13 @@ const Birthday = ({data}) => {
 const Dog = ({data}) => {
   const herbariumData = data.dog
   return (
-    <div className={styles.picContent}>
-      {herbariumData.map((value, index) => (
-        <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
-      ))}
+    <div className={styles.items}>
+      <TitleContent title={'項圈'} iconName={mdiDogSide} />
+      <div className={styles.picContent}>
+        {herbariumData.map((value, index) => (
+          <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />
+        ))}
+      </div>
     </div>
   )
 }
@@ -67,10 +96,13 @@ const Dog = ({data}) => {
 const AdvancedDog = ({data}) => {
   const advancedDogData = data.advancedDog
   return (
-    <div className={styles.picContent}>
-      {advancedDogData.map((value, index) => (
-        <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={260} />
-      ))}
+    <div className={styles.items}>
+      <TitleContent title={'項圈'} iconName={mdiDogSide} />
+      <div className={styles.picContent}>
+        {advancedDogData.map((value, index) => (
+          <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={260} />
+        ))}
+      </div>
     </div>
   )
 }
