@@ -11,7 +11,7 @@ import clsx from 'clsx'
 function About() {
   return (
     <div className={styles.about}>
-      <Avatar img={Image} width={150} height={150} />
+      <Avatar img={Image} width={200} height={200} />
       <div className={styles.name}>
         <h2>許佩蓉</h2>
         <p>Carol</p>
