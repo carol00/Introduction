@@ -6,7 +6,7 @@ import { addAmount } from '../../redux/cloudAmountSlice'
 
 const goalData = [
   {title: '短期', content: '學好React'},
-  {title: '中期', content: '獨立完成維護工作'},
+  {title: '中期', content: '能夠獨立完成維護工作'},
   {title: '長期', content: '看F1現場！！'}
 ]
 
@@ -15,12 +15,14 @@ const cloudPos = [ 'cloudPos1', 'cloudPos2', 'cloudPos3' ]
 
 const Cloud = ({item, index}) => {
   const dispatch = useDispatch()
+  const clickCloudAmount = useSelector(state => state.cloudAmount.amount)
+  const cloudTotal = 2
   const [ transform, setTransform ] = useState(false)
   const clickTransform = useCallback(() => {
-    if (transform) return
+    if (transform || clickCloudAmount === cloudTotal) return
     dispatch(addAmount())
     setTransform(!transform)
-  }, [dispatch, transform])
+  }, [dispatch, transform, clickCloudAmount])
 
   return (
     <div className={clsx(styles.cloudWrap, styles[`${cloudPos[index]}`], transform && styles[moveCloudAniName[index]])}>
@@ -34,7 +36,7 @@ const Cloud = ({item, index}) => {
 
 export default function Goal() {
   const clickCloudAmount = useSelector(state => state.cloudAmount.amount)
-  const cloudTotal = 3
+  const cloudTotal = 2
 
   return (
     <div className={styles.root}>
