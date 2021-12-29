@@ -2,6 +2,12 @@
 
 $cloud-bg: #f2f2f2
 $cloud-border: 3px solid #dedede
+$cloud1-scale: 1.75
+$cloud2-scale: 1.6
+$cloud3-scale: 0.8
+$moveX: 2000px
+$disappear: 0
+$appear: 1
 
 .root
   width: 100%
@@ -63,18 +69,19 @@ $cloud-border: 3px solid #dedede
       .cloudPos1
         display: flex
         justify-content: flex-end
-        transform: scale(1.2)
+        transform: scale($cloud1-scale)
         z-index: 3
-        top: 150px
+        top: 40px
         filter: drop-shadow(2px 8px 6px #ccc)
+        margin-right: 520px
         // visibility: hidden
       .cloudPos2
         display: grid
         align-items: flex-start
-        margin-left: -340px
-        transform: scale(1.3)
+        margin-left: -260px
+        transform: scale($cloud2-scale)
         z-index: 2
-        top: 35px
+        top: 62px
         filter: drop-shadow(10px 19px 24px #94929270)
         // visibility: hidden
         .cloud
@@ -84,14 +91,14 @@ $cloud-border: 3px solid #dedede
         justify-items: center
         z-index: 1
         filter: drop-shadow(-18px -5px 18px #c4b9b985)
-        transform: scale(0.8)
+        transform: scale($cloud3-scale)
         font-size: 38px
         // visibility: hidden
       .moveCloud1
-        animation: moveLeft 2.7s
+        animation: moveLeft 1.5s
         animation-fill-mode: forwards
       .moveCloud2
-        animation: moveRight 2.5s
+        animation: moveRight 1.5s
         animation-fill-mode: forwards
       .moveCloud2 + div
         animation: scale 0.5s
@@ -106,26 +113,30 @@ $cloud-border: 3px solid #dedede
     animation-delay: 0.5s
   @keyframes moveLeft
     95%
-      transform: scale(1.2) translateX(-2000px)
+      transform: scale($cloud1-scale) translateX(-$moveX)
+    99%
+      opacity: $appear
     100%
-      opacity: 0
-      transform: scale(1.2) translateX(-2000px)
+      opacity: $disappear
+      transform: scale($cloud1-scale) translateX(-$moveX)
   @keyframes moveRight
     95%
-      transform: scale(1.3) translateX(2000px)
+      transform: scale($cloud2-scale) translateX($moveX)
+    99%
+      opacity: $appear
     100%
-      opacity: 0
-      transform: scale(1.3) translateX(2000px)
+      opacity: $disappear
+      transform: scale($cloud2-scale) translateX($moveX)
   @keyframes scale
     50%
       transform: scale(10)
     100%
-      opacity: 0
+      opacity: $disappear
       transform: scale(10)
   @keyframes transformImg
     0%
-      opacity: 0
+      opacity: $disappear
       background-image: url('../../../src/assets/bg/F1-1.jpg')
     100%
-      opacity: 1
+      opacity: $appear
       background-image: url('../../../src/assets/bg/F1-1.jpg')
