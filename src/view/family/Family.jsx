@@ -1,53 +1,39 @@
-// import Avatar from '../../component/avatar/Avatar'
 import styles from './family.module.sass'
-// import Icon from '@mdi/react'
 import { useEffect } from 'react'
-// import { mdiHomeAnalytics } from '@mdi/js'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchPhotoData } from '../../redux/familySlice'
-import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
-// const AvatarArea = () => {
-//   const avatarData = useSelector(state => state.family.avatar)
-//   const imgSize = 75
-//   return (
-//     <div className={styles.avatarContainer}>
-//       <div className={styles.avatarContent}>
-//         {avatarData.map((value, index) => (
-//           <Avatar key={index} img={value.src} width={imgSize} height={imgSize} />
-//         ))}
-//       </div>
-//       <div className={styles.iconContent}>
-//         <div className={styles.scaleUnbalanced}>
-//           <Icon path={mdiHomeAnalytics } />
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
+const srcset = (image, size, rows = 1, cols = 1) => {
+  return {
+    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    srcSet: `${image}?w=${size * cols}&h=${
+      size * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
+  };
+}
 
 const LifePhoto = () => {
   const photoData = useSelector(state => state.family.photo)
 
   return (
-    <div>
-      <Box sx={{ width: 950, height: 700, overflowY: 'auto' }}>
-        <ImageList variant="masonry" cols={6} gap={8}>
-          {photoData.map((item, index) => (
-            <ImageListItem key={index}>
-              <img
-                src={item.src}
-                srcSet={item.src}
-                alt={item.title}
-                loading="lazy"
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
-      </Box>
-    </div>
+    <ImageList
+      sx={{ width: 650, height: 600 }}
+      variant="quilted"
+      cols={4}
+      rowHeight={121}
+    >
+      {photoData.map((item) => (
+        <ImageListItem key={item.src} cols={item.cols || 1} rows={item.rows || 1}>
+          <img
+            {...srcset(item.src, 121, item.rows, item.cols)}
+            alt={item.title}
+            loading="lazy"
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>
   )
 }
 
