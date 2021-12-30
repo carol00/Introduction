@@ -108,7 +108,7 @@ $depiction-size: 23px
         animation: moveRight 1.5s
         animation-fill-mode: forwards
       .moveCloud2 + div
-        animation: scale 0.5s
+        animation: scale 1s
         animation-fill-mode: forwards
         animation-delay: 0.5s
       .moveCloud3
@@ -135,11 +135,13 @@ $depiction-size: 23px
       opacity: $disappear
       transform: scale($cloud2-scale) translateX($moveX)
   @keyframes scale
-    50%
-      transform: scale(10)
+    0%
+      transform: scale($cloud3-scale)
+    90%
+      transform: scale($cloud3-scale)
     100%
       opacity: $disappear
-      transform: scale(10)
+      transform: scale(3)
   @keyframes transformImg
     0%
       opacity: $disappear
