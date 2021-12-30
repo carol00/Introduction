@@ -6,9 +6,16 @@ $img-border-radius: 5px
   position: relative
   font-weight: 0
   margin: 5px
+  overflow: hidden
+  border-radius: 5px
   img
-    // width: 100%
-    height: 100%
+    height: auto
+    border-radius: 5px
+    width: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
     border-radius: $img-border-radius
   .title
     width: 100%
@@ -21,3 +28,4 @@ $img-border-radius: 5px
     font-weight: 600
     +variable.set-flex(center, center)
     border-radius: 0 0 $img-border-radius $img-border-radius
+    bottom: 0
