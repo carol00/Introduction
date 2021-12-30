@@ -26,12 +26,27 @@ $depiction-size: 23px
     background-size: cover
     // filter: blur(1px)
     z-index: -10
+    .finalGoal
+      top: 25%
+      position: absolute
+      left: 0
+      color: #fff
+      font-size: 20px
+      margin-left: 150px
+      display: none
+      text-shadow: 2px 2px #313839
+      h3
+        font-size: $title-size + 20
+      p
+        font-size: $depiction-size + 20
+    .showFinalGoal
+      animation: appearFinalGoal 3s
+      animation-fill-mode: forwards
+      animation-delay: 1.5s
+      display: block
+      opacity: 0
     .content
-      // width: 90%
       position: relative
-      // display: grid
-      // align-items: center
-      // justify-items: center
       .cloudWrap
         width: 100%
         height: 100%
@@ -153,3 +168,6 @@ $depiction-size: 23px
     100%
       opacity: $appear
       background-image: url('../../../src/assets/bg/F1-1.jpg')
+  @keyframes appearFinalGoal
+    100%
+      opacity: 1

@@ -7,7 +7,7 @@ import { addAmount } from '../../redux/cloudAmountSlice'
 const goalData = [
   {title: '短期', content: '學好React'},
   {title: '中期', content: '能夠獨立完成維護工作'},
-  {title: '長期', content: '看F1現場！！'}
+  {title: '長期', content: '...'}
 ]
 
 const moveCloudAniName = [ 'moveCloud1', 'moveCloud2', 'moveCloud3' ]
@@ -41,6 +41,10 @@ export default function Goal() {
   return (
     <div className={styles.root}>
       <div className={clsx(styles.container, clickCloudAmount === cloudTotal && styles.showF1)}>
+        <div className={clsx(styles.finalGoal, clickCloudAmount === cloudTotal && styles.showFinalGoal)}>
+          <h3>長期</h3>
+          <p>看F1賽車現場!!!</p>
+        </div>
         <div className={clsx(styles.content)}>
           {goalData.map((item, index) => (
             <Cloud key={index} item={item} index={index}/>
