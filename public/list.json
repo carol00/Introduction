@@ -6,13 +6,12 @@
   ],
   "family": {
     "lifePhotoData": [
-      {"title": "12/4", "src": "../../assets/family/life/d1.jpg"},
-      {"title": "", "src": "../../assets/family/life/d2.jpg"},
-      {"title": "12/4", "src": "../../assets/family/life/d3.jpg"},
-      {"title": "12/4", "src": "../../assets/family/life/d4.jpg"},
-      {"title": "12/4", "src": "../../assets/family/life/d5.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d1.jpg", "rows": 2, "cols": 2},
       {"title": "12/4", "src": "../../assets/family/life/d6.jpg"},
       {"title": "12/4", "src": "../../assets/family/life/d7.jpg"},
+      {"title": "", "src": "../../assets/family/life/d2.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d3.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/d4.jpg", "cols": 2},
       {"title": "12/4", "src": "../../assets/family/life/d8.jpg"},
       {"title": "12/4", "src": "../../assets/family/life/d9.jpg"},
       {"title": "12/4", "src": "../../assets/family/life/d10.jpg"},
