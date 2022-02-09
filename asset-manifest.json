@@ -1,28 +1,22 @@
 {
   "files": {
-    "main.css": "/Introduction/static/css/main.bee9fcde.chunk.css",
-    "main.js": "/Introduction/static/js/main.d1c6e31b.chunk.js",
-    "main.js.map": "/Introduction/static/js/main.d1c6e31b.chunk.js.map",
-    "runtime-main.js": "/Introduction/static/js/runtime-main.01cef77b.js",
-    "runtime-main.js.map": "/Introduction/static/js/runtime-main.01cef77b.js.map",
-    "static/js/2.2a0b0408.chunk.js": "/Introduction/static/js/2.2a0b0408.chunk.js",
-    "static/js/2.2a0b0408.chunk.js.map": "/Introduction/static/js/2.2a0b0408.chunk.js.map",
-    "static/js/3.017b5879.chunk.js": "/Introduction/static/js/3.017b5879.chunk.js",
-    "static/js/3.017b5879.chunk.js.map": "/Introduction/static/js/3.017b5879.chunk.js.map",
+    "main.css": "/Introduction/static/css/main.f8dc39ae.css",
+    "main.js": "/Introduction/static/js/main.bfde6877.js",
+    "static/js/787.3d9df353.chunk.js": "/Introduction/static/js/787.3d9df353.chunk.js",
+    "static/media/bg18.jpg": "/Introduction/static/media/bg18.0bcc6e4a0d19e70264bd.jpg",
+    "static/media/bg21.jpg": "/Introduction/static/media/bg21.cacaec39817095747e04.jpg",
+    "static/media/bg27.jpg": "/Introduction/static/media/bg27.f272d7a6d1d53f660e25.jpg",
+    "static/media/bg28.jpg": "/Introduction/static/media/bg28.c8e19b24aa3c71bbd71c.jpg",
+    "static/media/avatar.jpg": "/Introduction/static/media/avatar.cfe31c53eaee7610fd66.jpg",
+    "static/media/F1-1.jpg": "/Introduction/static/media/F1-1.3a98fbb0ded4a2d71bd0.jpg",
+    "static/media/bg8.jpg": "/Introduction/static/media/bg8.b4189d97b00c1445a0cf.jpg",
     "index.html": "/Introduction/index.html",
-    "static/css/main.bee9fcde.chunk.css.map": "/Introduction/static/css/main.bee9fcde.chunk.css.map",
-    "static/js/2.2a0b0408.chunk.js.LICENSE.txt": "/Introduction/static/js/2.2a0b0408.chunk.js.LICENSE.txt",
-    "static/media/goal.module.sass": "/Introduction/static/media/bg28.c8e19b24.jpg",
-    "static/media/avatar.cfe31c53.jpg": "/Introduction/static/media/avatar.cfe31c53.jpg",
-    "static/media/experience.module.sass": "/Introduction/static/media/bg18.0bcc6e4a.jpg",
-    "static/media/introduction.module.sass": "/Introduction/static/media/bg21.cacaec39.jpg",
-    "static/media/family.module.sass": "/Introduction/static/media/bg27.f272d7a6.jpg",
-    "static/media/handMade.module.sass": "/Introduction/static/media/bg8.b4189d97.jpg"
+    "main.f8dc39ae.css.map": "/Introduction/static/css/main.f8dc39ae.css.map",
+    "main.bfde6877.js.map": "/Introduction/static/js/main.bfde6877.js.map",
+    "787.3d9df353.chunk.js.map": "/Introduction/static/js/787.3d9df353.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.01cef77b.js",
-    "static/js/2.2a0b0408.chunk.js",
-    "static/css/main.bee9fcde.chunk.css",
-    "static/js/main.d1c6e31b.chunk.js"
+    "static/css/main.f8dc39ae.css",
+    "static/js/main.bfde6877.js"
   ]
 }
