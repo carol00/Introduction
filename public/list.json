@@ -68,6 +68,7 @@
       {"src": "../../assets/handMade/birthday/5.jpg", "title": "蛋糕" }
     ],
     "dog": [
+      {"src": "../../assets/handMade/dog/8.jpg", "title": "裁縫車" },
       {"src": "../../assets/handMade/dog/1-1.jpg", "title": "項圈" },
       {"src": "../../assets/handMade/dog/1-2.jpg", "title": "項圈" },
       {"src": "../../assets/handMade/dog/1-5.jpg", "title": "項圈" },
@@ -76,7 +77,6 @@
       {"src": "../../assets/handMade/dog/2-1.jpg", "title": "領巾" },
       {"src": "../../assets/handMade/dog/2-2.jpg", "title": "領巾" },
       {"src": "../../assets/handMade/dog/2-3.jpg", "title": "領巾" },
-      {"src": "../../assets/handMade/dog/3-1.jpg", "title": "髮帶" },
       {"src": "../../assets/handMade/dog/3-2.jpg", "title": "髮帶" }
     ],
     "advancedDog": [
