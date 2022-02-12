@@ -5,7 +5,7 @@ import clsx from "clsx";
 const title = [
   {name: 'Introduction', to: '/'},
   {name: 'Family', to: '/family'},
-  {name: 'Hand Made', to: '/handMade'},
+  {name: 'Hobby', to: '/handMade'},
   {name: 'Experience', to: '/experience'},
   {name: 'Goal', to: '/goal'},
 ]
