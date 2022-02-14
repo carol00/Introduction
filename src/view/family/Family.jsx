@@ -32,7 +32,7 @@ const LifePhoto = () => {
   return (
     <div>
       <ImageList
-        sx={{ width: 650, height: 600 }}
+        sx={{ width: 650, height: 620 }}
         variant="quilted"
         cols={4}
         rowHeight={121}
