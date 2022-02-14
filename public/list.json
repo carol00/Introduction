@@ -28,7 +28,7 @@
       {"title": "12/4", "src": "../../assets/family/life/h1.jpg"},
       {"title": "12/4", "src": "../../assets/family/life/h2.jpg"},
       {"title": "12/4", "src": "../../assets/family/life/h3.jpg"},
-      {"title": "12/4", "src": "../../assets/family/life/w1.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/w1.jpg", "rows": 3, "cols": 3},
       {"title": "12/4", "src": "../../assets/family/life/w2.jpg"}
     ],
     "avatar": [
