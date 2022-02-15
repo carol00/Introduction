@@ -29,9 +29,9 @@ ValueLabelComponent.propTypes = {
 };
 
 const companyData = [
-  { name: '宣揚', time: '2016/01~2017/10', content: '前台、後台', icon: <LaptopMacIcon /> },
+  { name: '宣揚', time: '2016/01~2017/10', content: '購物網', icon: <LaptopMacIcon /> },
   { name: '長青', time: '2017/11~2021/05',  content: '官網、H5老虎機', icon: <SportsEsportsIcon /> },
-  { name: '弈樂', time: '2021/11/08 ~', content: '官網', icon: <SportsEsportsIcon /> }
+  { name: '弈樂', time: '2021/11/08 ~', content: '官網、後台', icon: <SportsEsportsIcon /> }
 ]
 
 const theme = createTheme({
