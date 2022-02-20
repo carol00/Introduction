@@ -6,6 +6,7 @@ import familyReducer from './redux/familySlice'
 import handMadeReducer from './redux/handMadeSlice'
 import switcherReducer from './redux/switcherSlice'
 import cloudAmountReducer from './redux/cloudAmountSlice'
+import kyushuReducer from './redux/kyushuSlice'
 
 export const store = configureStore({
   reducer: {
@@ -15,6 +16,7 @@ export const store = configureStore({
     family: familyReducer,
     handMade: handMadeReducer,
     switcher: switcherReducer,
-    cloudAmount: cloudAmountReducer
+    cloudAmount: cloudAmountReducer,
+    kyushu: kyushuReducer,
   },
 })

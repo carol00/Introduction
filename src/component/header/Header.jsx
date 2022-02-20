@@ -7,6 +7,7 @@ const title = [
   {name: 'Family', to: '/family'},
   {name: 'Hobby', to: '/handMade'},
   {name: 'Experience', to: '/experience'},
+  {name: 'Kyushu', to: '/kyushu'},
   {name: 'Goal', to: '/goal'},
 ]
 

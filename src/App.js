@@ -3,6 +3,7 @@ import './App.css'
 import Introduction from './view/introduction/Introduction'
 import Experience from './view/experience/Experience'
 import Family from './view/family/Family'
+import Kyushu from './view/kyushu/Kyushu'
 import HandMade from './view/handMade/HandMade'
 import Goal from './view/goal/Goal'
 import TestView from './view/testView/TestView'
@@ -16,6 +17,7 @@ const RouterPage = () => {
       <Route exact path="family" element={<Family/>} />
       <Route exact path="handMade" element={<HandMade/>} />
       <Route exact path="goal" element={<Goal/>} />
+      <Route exact path="kyushu" element={<Kyushu/>} />
       <Route exact path="test" element={<TestView/>} />
       <Route path="*" element={<Introduction/>} />
     </Routes>
