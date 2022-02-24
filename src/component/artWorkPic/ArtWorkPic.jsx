@@ -5,9 +5,11 @@ export default function ArtWorkPic({img, title, width, height}) {
   return (
     <div className={styles.content} style={{width: width, height: height}}>
       <img src={img} alt="" />
-      <div className={styles.title}>
-        <p>{title}</p>
-      </div>
+      {title && 
+        <div className={styles.title}>
+          <p>{title}</p>
+        </div>
+      }
     </div>
   )
 }
