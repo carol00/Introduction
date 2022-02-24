@@ -29,7 +29,7 @@
       
 
       {"title": "12/4", "src": "../../assets/family/life/d8.jpg"},
-      {"title": "12/4", "src": "../../assets/family/life/d9.jpg"},
+      {"title": "12/4", "src": "../../assets/family/life/s2.jpg"},
       {"title": "12/4", "src": "../../assets/family/life/d10.jpg"},
       {"title": "", "src": "../../assets/family/life/d11.jpg"},
       {"title": "12/4", "src": "../../assets/family/life/d1009.jpg"},
@@ -55,14 +55,15 @@
     ],
     "crystal": [
       {"src": "../../assets/handMade/crystal/FN1.jpg", "title": "銅線" },
+      {"src": "../../assets/handMade/crystal/2.jpg", "title": "上色" },
       {"src": "../../assets/handMade/crystal/FN2.jpg", "title": "上色" },
+      {"src": "../../assets/handMade/crystal/3.jpg", "title": "組裝固定" },
       {"src": "../../assets/handMade/crystal/FN6.jpg", "title": "耳環" },
       {"src": "../../assets/handMade/crystal/FN11.jpg", "title": "髮夾" },
       {"src": "../../assets/handMade/crystal/FN10.jpg", "title": "髮夾" },
       {"src": "../../assets/handMade/crystal/FN3.jpg", "title": "耳環" },
       {"src": "../../assets/handMade/crystal/FN4.jpg", "title": "耳環" },
-      {"src": "../../assets/handMade/crystal/FN5.jpg", "title": "耳環" },
-      {"src": "../../assets/handMade/crystal/FN7.jpg", "title": "書籤" }
+      {"src": "../../assets/handMade/crystal/FN5.jpg", "title": "耳環" }
     ],
     "advancedCrystal": [
       {"src": "../../assets/handMade/crystal/FN9.jpg", "title": "玫瑰" },
@@ -79,7 +80,9 @@
       {"src": "../../assets/handMade/birthday/3.jpg", "title": "藍芽音樂盒" },
       {"src": "../../assets/handMade/birthday/5.jpg", "title": "慶生" },
       {"src": "../../assets/handMade/birthday/7.jpg", "title": "皮皮" },
-      {"src": "../../assets/handMade/birthday/8.jpg", "title": "BoBo" }
+      {"src": "../../assets/handMade/birthday/8.jpg", "title": "BoBo" },
+      {"src": "../../assets/handMade/birthday/m3.jpg", "title": "聖誕樹" },
+      {"src": "../../assets/handMade/birthday/m1.jpg", "title": "聖誕樹" }
     ],
     "dog": [
       {"src": "../../assets/handMade/dog/8.jpg", "title": "裁縫車" },
@@ -100,17 +103,22 @@
     ]
   },
   "trvel": {
-    "groupPic": { "src": "../../assets/kyushu/1.jpg" },
+    "groupPic": [
+      { "src": "../../assets/kyushu/1.jpg" },
+      { "src": "../../assets/kyushu/p3.jpg" }
+    ],
     "park": [
       { "src": "../../assets/kyushu/2-1.jpg" },
       { "src": "../../assets/kyushu/2-2.jpg" },
       { "src": "../../assets/kyushu/2-3.jpg" },
+      { "src": "../../assets/kyushu/p5.jpg" },
       { "src": "../../assets/kyushu/2-4.jpg" }
     ],
     "landscape": [
       { "src": "../../assets/kyushu/3-1.jpg" },
       { "src": "../../assets/kyushu/3-2.jpg" },
-      { "src": "../../assets/kyushu/3-3.jpg" },
+      { "src": "../../assets/kyushu/p2.jpg" },
+      { "src": "../../assets/kyushu/p1.jpg" },
       { "src": "../../assets/kyushu/3-4.jpg" }
     ],
     "aquarium": [
@@ -122,7 +130,8 @@
     "pearl": [
       { "src": "../../assets/kyushu/5-1.jpg" },
       { "src": "../../assets/kyushu/5-2.jpg" },
-      { "src": "../../assets/kyushu/5-3.jpg" }
+      { "src": "../../assets/kyushu/5-3.jpg" },
+      { "src": "../../assets/kyushu/99.jpg" }
     ]
   }
 }

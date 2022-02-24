@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Carousel from 're-carousel'
 import { fetchPhotoData } from '../../redux/kyushuSlice'
 import styles from './kyushu.module.sass'
-
+import clsx from 'clsx'
 
 export default function Kyushu() {
   const dispatch = useDispatch()
@@ -22,27 +22,35 @@ export default function Kyushu() {
       <div style={{backgroundColor: 'white', height: '100%'}} className={styles.container}>
         <div className={styles.content}>
           <h1>九州(2018)</h1>
-          <div>
-            <img src={groupPicData.src} alt="" />
+          <div className={styles.picContent}>
+            {groupPicData.map((value) => (
+              <div>
+                <img alt='' src={value.src} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      <div style={{backgroundColor: 'white', height: '100%'}} className={styles.container}>
+      <div style={{height: '100%'}} className={clsx(styles.container)}>
         <div className={styles.content}>
-          <h1>豪斯坦堡</h1>
+          <h1>豪斯登堡</h1>
           <div className={styles.picContent}>
             {parkData.map((value) => (
-              <img alt='' src={value.src} />
+              <div>
+                <img alt='' src={value.src} />
+              </div>
             ))}
           </div>
         </div>
       </div>
       <div style={{backgroundColor: 'white', height: '100%'}} className={styles.container}>
         <div className={styles.content}>
-          <h1>豪斯坦堡</h1>
+          <h1>豪斯登堡</h1>
           <div className={styles.picContent}>
             {landscape.map((value) => (
-              <img alt='' src={value.src} />
+              <div>
+                <img alt='' src={value.src} />
+              </div>
             ))}
           </div>
           </div>
@@ -52,7 +60,9 @@ export default function Kyushu() {
           <h1>西海珍珠水族館</h1>
           <div className={styles.picContent}>
             {aquarium.map((value) => (
-              <img alt='' src={value.src} />
+              <div>
+                <img alt='' src={value.src} />
+              </div>
             ))}
           </div>
           </div>
@@ -62,7 +72,9 @@ export default function Kyushu() {
           <h1>挖珍珠</h1>
           <div className={styles.picContent}>
             {pearl.map((value) => (
-              <img alt='' src={value.src} />
+              <div>
+                <img alt='' src={value.src} />
+              </div>
             ))}
           </div>
           </div>

@@ -69,7 +69,7 @@ const Birthday = ({data}) => {
   const herbariumData = data.birthday
   return (
     <div className={styles.items}>
-      <TitleContent title={'慶生'} iconName={mdiFlowerOutline} />
+      <TitleContent title={'佈置'} iconName={mdiFlowerOutline} />
       <div className={styles.picContent}>
         {herbariumData.map((value, index) => (
           <ArtWorkPic key={index} img={value.src} title={value.title} width={imgWidth} height={imgHeight} />

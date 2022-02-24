@@ -5,8 +5,8 @@ import clsx from 'clsx'
 import { addAmount } from '../../redux/cloudAmountSlice'
 
 const goalData = [
-  {title: '短期', content: '學好React、考汽車駕照'},
-  {title: '中期', content: '能夠獨立維護、開發(官網、後台)'},
+  {title: '短期', content: '學好React、考汽車駕照(不當三寶)'},
+  {title: '中期', content: '獨立維護、開發(官網、後台)'},
   {title: '長期', content: '...'}
 ]
 
